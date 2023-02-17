@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+ <style>
+.card {
+  border-radius: 30px;
+  box-shadow: 10px  8px 16px rgba(0,0,0,.05), 10px 8px 16px rgba(0,0,0,.1);
+}
+
+.card-title {
+  font-weight: 900;
+}
+
+.form-control {
+  height: 50px;
+  font-size: 20px;
+  border-color: #ced4da;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #6c757d;
+}
+
+.btn-primary {
+  background-color: #007
+}
+nav.navbar {
+  background-color: #f8f9fa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav.navbar a.navbar-brand img {
+  margin-right: 10px;
+}
+
+nav.navbar a.nav-link {
+  color: #212529;
+  margin-left: 20px;
+}
+
+nav.navbar a.nav-link:hover {
+  color: #007bff;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer h5 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+footer ul.list-unstyled li a {
+  color:
+}
+body{  background-color:#2bb526;
+}
+
+  </style>
+    <title>GMU Course registration</title>
+  </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="GMU.png" alt="Logo" width="70"></a>
+	 <a class="navbar-brand" href="#">George Mason University</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+ 
+</nav>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <div class="card bg-light">
+        <div class="card-body">
+          <h5 class="card-title text-center mb-4">Student Course Registration Login</h5>
+
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label visually-hidden">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email address">
+              <div id="emailHelp" class="form-text">use the gmu.edu email address</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label visually-hidden">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password">
+			 <a href="#" style="color:black" >Forgot password?</a>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center mb-4">Announcements</h5>
+
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">Announcement 1</h6>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">Summer semester registration start from March 8th.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">Announcement 2</h6>
+                <small>5 days ago</small>
+              </div>
+              <p class="mb-1">Deadline for applying for spring graduation is march 23rd.</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">Announcement 3</h6>
+                <small>1 week ago</small>
+              </div>
+              <p class="mb-1">logon to mason360 and register for the spring career fair.</p>
+            </a>
+			<a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">Announcement 4</h6>
+                <small>1 week ago</small>
+              </div>
+              <p class="mb-1">All students must submit their graduation plans by April 18th.</p>
+            </a>
+			
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-light">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About Us</h5>
+        <p>
+		George Mason University
+          4400 University Drive
+          Fairfax, Virginia 22030
+          
+        </pre>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Link</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="text-light">Sitemap</a>
+          </li>
+          <li>
+            <a href="#" class="text-light">Jobs</a>
+          </li>
+          <li>
+            <a href="#" class="text-light">Accessibility</a>
+          </li>
+          <li>
+            <a href="#" class="text-light">FOIA</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Contact Us</h5>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="text-light"><i class="fas fa-envelope me-3"></i> info@example.com</a>
+          </li>
+          <li>
+            <a href="#" class="text-light"><i class="fas fa-phone me-3"></i>+1(703)993-1000</a>
+          </li>
+          <li>
+            <a href="#" class="text-light"><i class="fas fa-home me-3"></i> 123 Main St, Suite 100</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Follow Us</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="me-4 text-light">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="me-4 text-light">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="me-4 text-light">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="me-4 text-light">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: #343a40;">
+    © 2023 Your Company
+  </div>
+</footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
