@@ -58,50 +58,86 @@
     color: gold;
 }
 
-/*Alerts and Past Semester*/
-
-.alerts-past-semester{
-    display: flex;
+.alerts-grades-past-classes{
     width: 90%;
     margin: auto;
     padding: 10px;
-    margin-top: 20px;
-    justify-content: space-between;
+    margin-top: 30px;
 }
 
-.alerts{
+.card-border{
     border: 2px solid black;
-    margin: 12px;
-    flex: 1;
 }
 
-.past-semester{
-    border: 2px solid black;
-    margin: 12px;
-    flex: 2;
-}
-
-.alert-flex{
+.alert-content{
     display: flex;
     justify-content: space-between;
+    margin:5px 10px 5px 10px;
+    background-color: red;
+}
+
+.card-size{
+    width: 33%;
+}
+
+.title{
+    color: black;
+    text-decoration: none;
+}
+
+.card-border{
+    border-radius: 10px;
     margin: 10px;
 }
 
-.drop-down-png{
-    width: 5%;
+.grades{
+    flex: 2;
+    background-color: whitesmoke;
 }
 
-.alert-flex img{
-    cursor: pointer;
+.alerts-heading, .grades-heading{
+    text-align: center;
 }
 
-.alerts-title p{
-    margin-left: 10px;
-    font-size: 20px;
+.course-grade{
+    margin: 10px 10px 20px 10px;
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.course-1, .course-2, .course-3{
+    flex: 1;
     font-weight: 500;
-    background-color: rgb(183, 183, 183);
 }
 
-.alerts-title{
-    background-color: rgb(183, 183, 183);
+.grade-box{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.grade-1 p, .grade-1{
+    background-color: green;
+    color: white;
+}
+.grade-2 p, .grade-2{
+    background-color: rgb(248, 194, 0);
+    color: white;
+}
+.grade-3 p, .grade-3{
+    background-color: rgb(205, 33, 3);
+    color: white;
+}
+
+.alert-content, .title, .title a, .alerts, .drop-down-image{
+    background-color: whitesmoke;
+}
+
+.alerts-heading, .alerts-heading h1, .grades-heading, .grades-heading h1{
+    background-color: #006633;
+}
+
+.alerts-heading h1, .grades-heading h1{
+    color: white;
 }

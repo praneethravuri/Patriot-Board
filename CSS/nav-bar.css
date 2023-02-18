@@ -14,7 +14,7 @@
 .nav-links a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     
     background-color: #006633;
     color: white;
@@ -33,7 +33,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10% 30px 10%;
+    padding: 10px 10% 10px 10%;
     background-color: #006633;
     border-bottom: 5px solid gold;
 }
@@ -58,6 +58,6 @@ header{
 }
 
 header img{
-    width: 12%;
+    width: 10%;
     background-color: #006633;
 }
