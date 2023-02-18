@@ -24,16 +24,20 @@
 .courses{
     width: 90%;
     margin: auto;
-    border: 3px solid green;
     padding: 10px;
     margin-top: 30px;
 }
 
 
 .card-body{
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
     margin: 10px;
     text-align: center;
+    border-radius: 15px;
+}
+
+.card-body, .card-content{
+    background-color: whitesmoke;
 }
 
 .card-content{
@@ -52,4 +56,52 @@
 
 .class-link a:hover{
     color: gold;
+}
+
+/*Alerts and Past Semester*/
+
+.alerts-past-semester{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.alerts{
+    border: 2px solid black;
+    margin: 12px;
+    flex: 1;
+}
+
+.past-semester{
+    border: 2px solid black;
+    margin: 12px;
+    flex: 2;
+}
+
+.alert-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.drop-down-png{
+    width: 5%;
+}
+
+.alert-flex img{
+    cursor: pointer;
+}
+
+.alerts-title p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(183, 183, 183);
+}
+
+.alerts-title{
+    background-color: rgb(183, 183, 183);
 }
