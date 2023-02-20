@@ -43,7 +43,7 @@ select{
           width:40%
       }
 #cName{
-          width:40%
+          width:65%
       }
 
 .groupOfInput{
@@ -51,7 +51,7 @@ select{
           flex-direction:column;
       }
       #cno{
-          width: 15%;
+          width: 25%;
       }
       
 
@@ -113,12 +113,12 @@ min-height : 60%;
 }
 
 .close{
-width : 58%;
 display : flex;
 
 }
 
 label{
+font-weight: bold;
 display : flex;
 }
 
