@@ -7,170 +7,204 @@
     <title>Registration</title>
     <link rel="stylesheet" href="./CSS/nav-bar.css">
     <link rel="stylesheet" href="./CSS/Registration.css">
-    
+
 
 </head>
-<body class = "body">
-    <header>
-        <img src="./Mason Logos/GMU_PLogo_KO+Gold.png" alt="" class="gmu-logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Student Profile</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Registration</a></li>
-                <li><a href="#">Grades</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+<header>
+    <img src="./Mason Logos/GMU_PLogo_KO+Gold.png" alt="" class="gmu-logo">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Student Profile</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Grades</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section class="container">
-        <div id="col-1">
-<form>
-        <div class="form-group">
-        <lable> Term: </lable>
-          <select>
-            <option value="Spring-2023" selected>Spring 2023</option>
-            <option value="Summer-2023">Summer-2023</option>
-            <option value="Fall-2023">Fall-2023</option>
+<section class="seperation">
+    <div id="col-1">
+        <form>
+            <div class="groupOfForm">
+                <lable> Term:</lable>
+                <select>
+                    <option value="Spring-2023" selected>Spring 2023</option>
+                    <option value="Summer-2023">Summer-2023</option>
+                    <option value="Fall-2023">Fall-2023</option>
 
-          </select>
-          
-        </div>
-        <div class = "input-group">
-        <label> Department : </label>
-        <br> 
-            <div class = "form-group">
-            <input type="radio" value="Computer_Science" name="department" checked /> Computer Science   
-            <input type="radio" value="Software_Engineering" name="department" /> Software Engineering 
-            <input type="radio" value="Other" name="department" /> 
-            <input list="Departments" name="department" id="department">
-            <datalist id="Departments"> Other
-                    <option value="Information Systems">
-                    <option value="Data Analytics">
-                    <option value="Cyber Security">
-                    <option value="Health Informatics">
-                    <option value="Computer Engineering">
-            </datalist>
+                </select>
+
             </div>
-        </div>
-         <div class = "form-group">
-        <label name = "cno" > Course Number </label> 
-        <input type = "text" name = "cno" id = "cno">
-        <label name = "cName"> Course Name</label> 
-        <input type = "text" name = "cName" id = "cName">
-        </div>
-        
-                <div class = "form-group">
-                <label onclick = "showPWField()" style = "cursor: pointer;"> <a > Advanced Options </a> </label>
+            <div class="groupOfInput">
+                <label> Department : </label>
+                <div class="groupOfForm">
+                <div class = "close">
+                    <input type="radio" value="Computer_Science" name="department" checked/> Computer Science
+                </div>
+                <div class = "close">
+                    <input type="radio" value="Software_Engineering" name="department"/> Software Engineering
+                    </div>
+                    <div class = "close">
+                    <input type="radio" value="Other" name="department"/>
+                    <input list="Departments" name="department" id="department">
+                    <datalist id="Departments"> Other
+                        <option value="Information Systems">
+                        <option value="Data Analytics">
+                        <option value="Cyber Security">
+                        <option value="Health Informatics">
+                        <option value="Computer Engineering">
+                    </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="groupOfForm">
+            <div class = "close">
+                <label name="cno"> Course Number </label>
+                <input type="text" name="cno" id="cno">
+                </div>
+                <div class = "close">
+                <label name="cName"> Course Name</label>
+                <input type="text" name="cName" id="cName">
+                </div>
+            </div>
+
+            <div class="groupOfForm">
+                <button onclick="showPWField()" type="button" style="cursor: pointer;"> Advanced Options</button>
                 <script>
                     function showPWField() {
-                        document.getElementById("AdvancedSearch").style.cssText = "display: flex; flex-direction:column;";                    }
+                        var id = document.getElementById("AdvancedSearch");
+                                if (id.style.display === "none") {
+                                             id.style.cssText = "display: flex; flex-direction:column; min-height: 20%; justify-content: space-between;";
+                                          } else {
+                                            id.style.display = "none";
+                                          }
+                                }
+
                 </script>
             </div>
-        
-        <div input = "input-group" style = "display:none" id = "AdvancedSearch">
-        <div class = "form-group" >
-        <label name = "ClassType" > Class Type </label> 
-        <input type="radio" value="InPerson" name="ClassType" checked /> In Person   
-        <input type="radio" value="Online" name="ClassType" /> Online 
-        <input type="radio" value="Both" name="ClassType" /> Both
-        </div>
-        <br>
-        <div class = "form-group" >
-        <label name = "iName" > Instructor </label> 
-        <input type = "text" name = "iName" id = "cName">
-        <label name = "Available"></label> 
-        
-         <label> Meeting Day
-        <select id = "cName">
-            <option value="Any" selected>Any</option>
-            <option value="Monday" >Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday" >Thursday</option>
-            <option value="Friday">Friday</option>
-            <option value="Saturday">Saturday</option>
-            <option value="Sunday">Sunday</option>
-          </select>
-        </div>
-        <br>
-        <div class = "form-group" >
-        <input type="checkbox" name = "available" id ="cb"> 
-        <label for="available">Courses with Seats available </label>
-        <input type="checkbox" name = "available" id ="cb"> 
-        <label for="available">Courses with Waitllists available </label>
-        </div>
-        </div>
 
-            
-        <div class = "form-group">
-        <button class = "button" onclick = "showPW()">Search</button>
-         <script>
+            <div input="groupOfInput" style="display:none" id="AdvancedSearch">
+                <div class="groupOfForm">
+                    <label name="ClassType"> Class Type </label>
+                    <div class = "close">
+                    <input type="radio" value="InPerson" name="ClassType" checked/> In Person
+                    </div>
+                    <div class = "close">
+                    <input type="radio" value="Online" name="ClassType"/> Online
+                    </div>
+                    <div class = "close">
+                    <input type="radio" value="Both" name="ClassType"/> Both
+                    </div>
+                </div>
+                <div class="groupOfForm">
+                    <label name="iName"> Instructor </label>
+                    <input type="text" name="iName" id="cName">
+                    <label name="Available"></label>
+
+                    <label> Meeting Day
+                        <select id="cName">
+                            <option value="Any" selected>Any</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                </div>
+                <div class="groupOfForm">
+                    <input type="checkbox" name="available" id="cb">
+                    <label for="available">Courses with Seats available </label>
+                    <input type="checkbox" name="available" id="cb">
+                    <label for="available">Courses with Waitllists available </label>
+                </div>
+            </div>
+
+
+            <div class="groupOfForm">
+                <button class="button" type="button" onclick="showPW()">Search</button>
+                <script>
                     function showPW() {
-                        document.getElementById("results").style.cssText = "display: flex; flex-direction:column;";                    }
-                </script>
-        </div>
-      </form>
-        </div>
-        <div id="col-2">
-            <div id = "row21">
-            <h3> Search Results </h3>
-            <div class = "results " style = "display : none" >
-            <table class="table table-bordered">
-     <thead>
-    <tr>
-      <td >Course No </td>
-      <td >Course Name</td>
-      <td> Meeting Time </td>
-      <td> Location </td>
-      <td> Seats and Waitlists </td>
-      <td ></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SWE 632</td>
-      <td>User Interface Design and Development </td>
-      <td> Monday     7:20 - 10:00 PM  </td>
-      <td> Sandbridge Hall 107 </td>
-      <td><button>Register</button></td>
-      <td> <button> More Details </button> </td>
-      
-    </tr>
+                        var id = document.getElementById("results");
+                                if (id.style.display === "none") {
+                                             id.style.cssText = "display: flex;";
+                                          } else {
+                                            id.style.display = "none";
+                                          }
+                        }
 
-  </tbody>
-</table>
+                </script>
             </div>
+        </form>
+    </div>
+    <div id="col-2">
+        <div id="row21">
+            <h3> Search Results </h3>
+            <div id="results" style="display:none">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <td>Course No</td>
+                        <td>Course Name</td>
+                        <td> Meeting Time</td>
+                        <td> Location</td>
+                        <td> Seats and Waitlists</td>
+                        <td></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>SWE 632</td>
+                        <td>User Interface Design and Development</td>
+                        <td> Monday 7:20 - 10:00 PM</td>
+                        <td> Sandbridge Hall 107</td>
+                        <td>
+                            <button>Register</button>
+                        </td>
+                        <td>
+                            <button> More Details</button>
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
             </div>
-            <div id = "row22">
+        </div>
+        <div id="row22">
             <h3> Registered Courses </h3>
             <table class="table1 table-bordered">
-            
-  <thead>
-    <tr>
-      <td >Course No </td>
-      <td >Course Name</td>
-      <td ></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>CS 583</td>
-      <td>Analysis of Algorithms</td>
-      <td><button>Unregister</button></td>
-    </tr>
-    <tr>
-      <td>CS 584</td>
-      <td>Introduction to Data Mining</td>
-      <td><button>Unregister</button></td>
-    </tr>
-  </tbody>
-</table>
-            </div>
+                <thead>
+                <tr>
+                    <td>Course No</td>
+                    <td>Course Name</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>CS 583</td>
+                    <td>Analysis of Algorithms</td>
+                    <td>
+                        <button>Unregister</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CS 584</td>
+                    <td>Introduction to Data Mining</td>
+                    <td>
+                        <button>Unregister</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
- 
+    </div>
+</section>
+
 </body>
 </html>
