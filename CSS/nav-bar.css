@@ -15,7 +15,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    
+    text-decoration: none;
     background-color: #006633;
     color: white;
 }
@@ -27,6 +27,10 @@
     
     background-color: #006633;
     color: white;
+}
+
+.nav-links ul{
+    background-color: red;
 }
 
 header{
