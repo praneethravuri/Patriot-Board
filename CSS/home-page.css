@@ -12,7 +12,7 @@
 .curr-semester{
     margin-bottom: 30px;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .card-border{
-    border: 2px solid black;
+    border: 2px solid whitesmoke;
 }
 
 .alert-content{
@@ -76,28 +76,31 @@
 }
 
 .title{
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 .card-border{
-    border-radius: 10px;
     margin: 10px;
 }
 
-.grades{
-    flex: 2;
+.alerts-heading, .grades-heading, .tools-heading{
+    text-align: center;
 }
 
-.alerts-heading, .grades-heading{
+.grades{
+    width: 33%;
     text-align: center;
+}
+
+.tools-box{
+    width: 33%;
 }
 
 .course-grade{
     margin: 10px 10px 20px 10px;
     display: flex;
-    border: 2px solid gray;
-    border-radius: 10px;
+    justify-content: space-between;
 }
 
 .course-1, .course-2, .course-3{
@@ -108,27 +111,13 @@
 .grade-box{
     padding: 10px;
     border: 1px solid white;
-    border-radius: 10px;
-}
-
-.grade-1 p, .grade-1{
-    background-color: green;
-    color: white;
-}
-.grade-2 p, .grade-2{
-    background-color: rgb(248, 194, 0);
-    color: white;
-}
-.grade-3 p, .grade-3{
-    background-color: rgb(205, 33, 3);
-    color: white;
 }
 
 .alert-content, .title, .title a, .alerts, .drop-down-image{
     background-color: white;
 }
 
-.alerts-heading, .alerts-heading h1, .grades-heading, .grades-heading h1{
+.alerts-heading, .alerts-heading h1, .grades-heading, .grades-heading h1, .tools-heading, .tools-heading h1{
     background-color: #006633;
 }
 
@@ -163,4 +152,19 @@ table td{
 
 #currStudentInfo td{
     font-weight: 500;
+}
+
+.grade-subject-1, .grade-subject-2, .grade-subject-3{
+    padding: 5px;
+    font-weight: 500;
+}
+
+.grade-subject-1{
+    background-color: rgb(0, 255, 0);
+}
+.grade-subject-2{
+    background-color: yellow;
+}
+.grade-subject-3{
+    background-color: red;
 }

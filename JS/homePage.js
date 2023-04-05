@@ -27,3 +27,11 @@ for(let i = 1; i<=3; i++){
     document.getElementById("course-loc-" + i.toString()).innerHTML = courseList[currentCourse].location;
     document.getElementById("timings-" + i.toString()).innerHTML = courseList[currentCourse].timings;
 }
+
+$(document).ready(function(){
+    for(let i = 1; i<=3; i++){
+        let currentCourse = currStudentData[i-1];
+        let id = "course-" + i.toString();
+        $("#" + id).text(currentCourse);
+    }
+});
