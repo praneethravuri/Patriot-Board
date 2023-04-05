@@ -7,6 +7,8 @@
     <title>Homepage - George Mason University</title>
     <link rel="stylesheet" href="./CSS/home-page.css">
     <link rel="stylesheet" href="./CSS/nav-bar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
 </head>
 <body>
@@ -25,35 +27,49 @@
         </nav>
     </header>
 
+    <div class="student-info">
+        <img src="./Images/round-account-button-with-user-inside.png" alt="">
+        <div class="student-info-table">
+            <table id="currStudentInfo">
+                <tr>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+
     <section class="courses">
         <h1 class="curr-semester">Spring 2023</h1>
         <div class="flex-container">
             
             <div class="card-body card-1"> 
-                <h3 class="course-title card-content">SWE 632</h3>
+                <h3 class="course-title card-content " id="course-title-1"></h3>
                 <p class="course-desc card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content">Dimitri Kaznachey</p>
-                <p class="class-location card-content">Sandbridge Hall | Room: 107</p>
+                <p class="professor card-content " id="course-prof-1"></p>
+                <p class="class-location card-content " id="course-loc-1"></p>
+                <p id="timings-1"></p>
                 <div class="class-link card-content">
                     <a href="#">View Course</a>
                 </div>
             </div>
 
             <div class="card-body card-1"> 
-                <h3 class="course-title card-content">CS 550</h3>
+                <h3 class="course-title card-content" id="course-title-2"></h3>
                 <p class="course-desc card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content">Mahmood Riyadh</p>
-                <p class="class-location card-content">Distance Learning Course (Online)</p>
+                <p class="professor card-content " id="course-prof-2"></p>
+                <p class="class-location card-content " id="course-loc-2"></p>
+                <p id="timings-2"></p>
                 <div class="class-link card-content">
                     <a href="#">View Course</a>
                 </div>
             </div>
 
             <div class="card-body card-1"> 
-                <h3 class="course-title card-content">INFS 740</h3>
+                <h3 class="course-title card-content" id="course-title-3"></h3>
                 <p class="course-desc card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content">Reza Hemayati</p>
-                <p class="class-location card-content">Art and Design Building | Room: 2026</p>
+                <p class="professor card-content " id="course-prof-3"></p>
+                <p class="class-location card-content " id="course-loc-3"></p>
+                <p id="timings-3"></p>
                 <div class="class-link card-content">
                     <a href="#">View Course</a>
                 </div>
@@ -143,5 +159,6 @@
             </div>
         </div>
     </section>
+    <script type="module" src="./JS/homePage.js"></script>
 </body>
 </html>

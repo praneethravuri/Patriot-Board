@@ -26,6 +26,7 @@
     margin: auto;
     padding: 10px;
     margin-top: 30px;
+    text-align: center;
 }
 
 
@@ -33,13 +34,7 @@
     border: 2px solid whitesmoke;
     margin: 10px;
     text-align: center;
-    border-radius: 15px;
 }
-
-.card-body, .card-content{
-    background-color: whitesmoke;
-}
-
 .card-content{
     margin: 20px;
 }
@@ -92,7 +87,6 @@
 
 .grades{
     flex: 2;
-    background-color: whitesmoke;
 }
 
 .alerts-heading, .grades-heading{
@@ -131,7 +125,7 @@
 }
 
 .alert-content, .title, .title a, .alerts, .drop-down-image{
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .alerts-heading, .alerts-heading h1, .grades-heading, .grades-heading h1{
@@ -140,4 +134,33 @@
 
 .alerts-heading h1, .grades-heading h1{
     color: white;
+}
+
+.student-info{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.student-info img{
+    width: 7%;
+}
+
+.student-info-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: 2px solid whitesmoke;
+    margin: 10px;
+}
+
+table td{
+    padding: 20px;
+}
+
+#currStudentInfo td{
+    font-weight: 500;
 }
