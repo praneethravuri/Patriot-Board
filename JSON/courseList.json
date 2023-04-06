@@ -33,5 +33,35 @@
         "instrName" : "Michael Brown",
         "location" : "Art and Design Building | Room: 1040",
         "timings" : "Tuesday | 9:00am - 11:40am"
+    },
+    "STAT 550" : {
+        "instrName" : "Jennifer Kim",
+        "location" : "Exploratory Hall | Room: 2040",
+        "timings" : "Monday | 9:00am - 11:40am"
+    },
+    "MATH 650" : {
+        "instrName" : "David Lee",
+        "location" : "Art and Design Building | Room: 3080",
+        "timings" : "Wednesday | 1:30pm - 4:10pm"
+    },
+    "ECON 420" : {
+        "instrName" : "Susan Park",
+        "location" : "Innovation Hall | Room: 101",
+        "timings" : "Friday | 9:00am - 11:40am"
+    },
+    "CHEM 430" : {
+        "instrName" : "Michael Davis",
+        "location" : "Planetary Hall | Room: 3030",
+        "timings" : "Thursday | 1:30pm - 4:10pm"
+    },
+    "PHYS 650" : {
+        "instrName" : "Karen Johnson",
+        "location" : "Art and Design Building | Room: 1080",
+        "timings" : "Tuesday | 1:30pm - 4:10pm"
+    },
+    "ENG 520" : {
+        "instrName" : "James Wilson",
+        "location" : "Engineering Building | Room: 1020",
+        "timings" : "Wednesday | 9:00am - 11:40am"
     }
 }

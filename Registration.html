@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/nav-bar.css">
     <link rel="stylesheet" href="./CSS/Registration.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 
 </head>
 <body>
@@ -62,28 +64,17 @@
             </div>
             <div class="groupOfForm">
             <div class = "close">
-                <label name="cno"> Course No </label>
-                <input type="text" name="cno" id="cno">
+                <label name="dcode"> Course Department </label>
+                <input type="text" name="dcode" id="dcode">
                 </div>
                 <div class = "close">
-                <label name="cName"> Course Name</label>
-                <input type="text" name="cName" id="cName">
+                <label name="cno"> Course Number</label>
+                <input type="text" name="cno" id="cno">
                 </div>
             </div>
 
             <div class="groupOfForm">
-                <button onclick="showPWField()" type="button" style="cursor: pointer;"> Advanced Options</button>
-                <script>
-                    function showPWField() {
-                        var id = document.getElementById("AdvancedSearch");
-                                if (id.style.display === "none") {
-                                             id.style.cssText = "display: flex; flex-direction:column; min-height: 20%; justify-content: space-between;";
-                                          } else {
-                                            id.style.display = "none";
-                                          }
-                                }
-
-                </script>
+                <button type="button" style="cursor: pointer;" id="advanced-option"> Advanced Options</button>
             </div>
 
             <div input="groupOfInput" style="display:none" id="AdvancedSearch">
@@ -126,85 +117,46 @@
 
 
             <div class="groupOfForm">
-                <button class="button" type="button" onclick="showPW()">Search</button>
-                <script>
-                    function showPW() {
-                        var id = document.getElementById("results");
-                                if (id.style.display === "none") {
-                                             id.style.cssText = "display: flex;";
-                                          } else {
-                                            id.style.display = "none";
-                                          }
-                        }
-
-                </script>
+                <button class="button" type="button" id="search-btn">Search</button>
             </div>
         </form>
     </div>
     <div id="col-2">
         <div id="row21">
-            <h4> Search Results </h4>
+            <h4 id="search-result"> Search Results </h4>
             <div id="results" style="display:none">
                 <table class="table">
                     <thead>
                     <tr>
-                        <td scope="col">Course No</td>
-                        <td scope="col">Course Name</td>
-                        <td scope="col"> Meeting Time</td>
-                        <td scope="col"> Location</td>
-                        <td scope="col"> Seats and Waitlists</td>
-                        <td></td>
+                        <td>Course</td>
+                        <td>Instructor Name</td>
+                        <td>Location</td>
+                        <td>Timings</td>
+                        <td>Register</td>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td scope="row">SWE 632</td>
-                        <td>User Interface Design and Development</td>
-                        <td> Monday 7:20 - 10:00 PM</td>
-                        <td> Sandbridge Hall 107</td>
-                        <td>
-                            <button>Register</button>
-                        </td>
-                        <td>
-                            <button>Details</button>
-                        </td>
-
-                    </tr>
-
+                    <tbody id="search-result-course">
                     </tbody>
                 </table>
             </div>
         </div>
         <div id="row22">
-            <h4> Registered Courses </h4>
-            <table class="table">
+            <h4 id="courses-status"></h4>
+            <table class="table" id="registered-courses-table">
                 <thead>
-                <tr>
-                    <td  scope="col">Course No</td>
-                    <td  scope="col">Course Name</td>
-                    <td></td>
-                </tr>
+                    <tr>
+                        <td>Course</td>
+                        <td>Instructor Name</td>
+                        <td>Location</td>
+                        <td>Timings</td>
+                    </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td scope="row">CS 583</td>
-                    <td>Analysis of Algorithms</td>
-                    <td>
-                        <button>Unregister</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td scope="row">CS 584</td>
-                    <td>Introduction to Data Mining</td>
-                    <td>
-                        <button>Unregister</button>
-                    </td>
-                </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </section>
-
+<script type="module" src="./JS/registration.js"></script>
 </body>
 </html>
