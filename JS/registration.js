@@ -1,4 +1,4 @@
-function showPWField() {
+/*function showPWField() {
     var id = document.getElementById("AdvancedSearch");
     if (id.style.display === "none") {
         id.style.cssText = "display: flex; flex-direction:column; min-height: 20%; justify-content: space-between;";
@@ -6,15 +6,16 @@ function showPWField() {
         id.style.display = "none";
     }
 }
+*/
 
-function showPW() {
-    var id = document.getElementById("results");
-    if (id.style.display === "none") {
-        id.style.cssText = "display: flex;";
-    } else {
-        id.style.display = "none";
-    }
-}
+$("#AdvancedSearch").hide();
+
+$(document).ready(function(){
+    $("#advanced-option").click(function(){
+        $("#AdvancedSearch").show();
+        document.getElementById("AdvancedSearch").style.cssText = "display: flex; flex-direction:column; min-height: 20%; justify-content: space-between;";
+    })
+})
 
 async function readJSONFile(url) {
     const data = await $.getJSON(url);
@@ -44,7 +45,7 @@ function showResults(course, courseList){
 
 $(document).ready(function(){
     $("#search-btn").click(function(){
-        let course = ($("#dcode").val() + " " + $("#cno").val()).toUpperCase();
+        let course = ($("#dcode").val().trim() + " " + $("#cno").val().trim()).toUpperCase();
         if(course in courseList){
             showResults(course, courseList);
         }
