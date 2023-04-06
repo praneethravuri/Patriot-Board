@@ -1,5 +1,5 @@
 let studentDetails = ["Praneeth Ravuri", "G01369627", "571-683-8719"];
-let studentEmail = "pravuri@gmu.edu";
+let studentEmail = "sthaduru@gmu.edu";
 
 $(document).ready(function(){
     let row = "<tr>"

@@ -13,5 +13,25 @@
         "instrName" : "Reza Hemayati",
         "location" : "Art and Design Building | Room: 2026",
         "timings" : "Wednesday | 4:30pm - 7:10pm"
+    },
+    "CS 795" : {
+        "instrName" : "Linda Smith",
+        "location" : "Engineering Building | Room: 3030",
+        "timings" : "Thursday | 6:00pm - 8:40pm"
+    },
+    "CS 551" : {
+        "instrName" : "John Johnson",
+        "location" : "Innovation Hall | Room: 109",
+        "timings" : "Tuesday | 1:30pm - 4:10pm"
+    },
+    "CS 695" : {
+        "instrName" : "Amy Lee",
+        "location" : "Exploratory Hall | Room: 3010",
+        "timings" : "Wednesday | 6:00pm - 8:40pm"
+    },
+    "CS 583" : {
+        "instrName" : "Michael Brown",
+        "location" : "Art and Design Building | Room: 1040",
+        "timings" : "Tuesday | 9:00am - 11:40am"
     }
 }
