@@ -36,9 +36,6 @@ function showResults(course, courseList){
         row += "<td>" + courseList[course].instrName + "</td>"
         row += "<td>" + courseList[course].location + "</td>"
         row += "<td>" + courseList[course].timings + "</td>"
-        course = course.split(" ");
-        course = course[0] + "-" + course[1];
-        row += "<td><button onclick = 'addCourse()' id = 'add-class' class=" + course + ">Add Course</button></td>"
         $("#search-result-course").append(row);
     });
 }
@@ -56,3 +53,7 @@ $(document).ready(function(){
         }
     });
 });
+
+function addCourses(){
+    console.log("here");
+}

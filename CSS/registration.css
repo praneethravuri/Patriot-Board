@@ -10,6 +10,10 @@ body{
 
 }
 
+#results{
+    text-align: center;
+}
+
 .seperation {
     display: flex;
     justify-content: center;
@@ -124,6 +128,13 @@ display : flex;
 .table, .table td, .table tr{
     text-align: center;
     border: 2px solid black;
+}
+
+#advanced-option, #add-class{
+    background-color: #006633;
+    color: white;
+    border: 2px solid whitesmoke;
+    padding: 5px;
 }
             
       
