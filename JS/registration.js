@@ -54,6 +54,18 @@ $(document).ready(function(){
     });
 });
 
-function addCourses(){
-    console.log("here");
+$(document).ready(function(){
+    $("#add-class").click(function(){
+        addAllRows();
+    });
+});
+
+function addAllRows(){
+    $("#registered-courses-table").find("tr:gt(0)").remove();
+    $("#courses-status").text("Registered Courses");
+    $("#registered-courses-table").show();
+    $("#search-result-course tr").each(function(){
+        $("#registered-courses-table-body").append($(this).clone());
+    });
 }
+
