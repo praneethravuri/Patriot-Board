@@ -6,3 +6,10 @@
 6. Logos are in the Mason Logos folder
 7. Internet connection is required to view the bootstrap files
 8. Please note that the website works best in the chrome browser
+
+Open the website using http-server:
+
+1. Open the folder in terminal and run "http-server --cors -c-1"
+2. Open "localhost:8080/index.html" for login page
+2. Open "localhost:8080/home-page.html" for Homepage
+2. Open "localhost:8080/registration.html" for Registration
