@@ -1,5 +1,5 @@
 let studentDetails = ["Praneeth Ravuri", "G01369627", "571-683-8719"];
-let studentEmail = "sthaduru@gmu.edu";
+let studentEmail = "pravuri@gmu.edu";
 
 $(document).ready(function(){
     let row = "<tr>"
@@ -15,8 +15,8 @@ async function readJSONFile(url) {
     return data;
 }
 
-let courseList = await readJSONFile("http://localhost:8080/JS/courseList.json");
-let studentData = await readJSONFile("http://localhost:8080/JS/studentData.json");
+let courseList = await readJSONFile("http://localhost:8080/JSON/courseList.json");
+let studentData = await readJSONFile("http://localhost:8080/JSON/studentData.json");
 
 let currStudentData = studentData[studentEmail];
 

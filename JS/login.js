@@ -3,7 +3,7 @@ async function readJSONFile(url) {
     return data;
 }
 
-let data = await readJSONFile("http://localhost:8080/JS/credentials.json");
+let data = await readJSONFile("http://localhost:8080/JSON/credentials.json");
 
 $(document).ready(function(){
     $(".btn-primary").click(function(){
