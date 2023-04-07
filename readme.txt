@@ -9,7 +9,8 @@
 
 Open the website using http-server:
 
-1. Open the folder in terminal and run "http-server --cors -c-1"
-2. Open "localhost:8080/index.html" for login page
-2. Open "localhost:8080/home-page.html" for Homepage
-2. Open "localhost:8080/registration.html" for Registration
+1. Install http-server by running the command "npm install http-server"
+2. Open the folder in terminal and run "http-server --cors -c-1"
+3. Open "localhost:8080/index.html" for login page
+4. Open "localhost:8080/home-page.html" for Homepage
+5. Open "localhost:8080/registration.html" for Registration
