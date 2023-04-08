@@ -22,7 +22,7 @@ async function readJSONFile(url) {
     return data;
 }
 
-let courseList = await readJSONFile("http://localhost:8080/JSON/courseList.json");
+let courseList = await readJSONFile("http://localhost:8080/model/courseList.json");
 
 $(document).ready(function(){
     $("#registered-courses-table").hide();

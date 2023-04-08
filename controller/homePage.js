@@ -15,8 +15,8 @@ async function readJSONFile(url) {
     return data;
 }
 
-let courseList = await readJSONFile("http://localhost:8080/JSON/courseList.json");
-let studentData = await readJSONFile("http://localhost:8080/JSON/studentData.json");
+let courseList = await readJSONFile("http://localhost:8080/model/courseList.json");
+let studentData = await readJSONFile("http://localhost:8080/model/studentData.json");
 
 let currStudentData = studentData[studentEmail];
 
