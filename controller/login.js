@@ -5,7 +5,7 @@ async function readJSONFile(url) {
 
 let data = await readJSONFile("http://localhost:8080/model/credentials.json");
 
-module.exports = readJSONFile;
+//module.exports = readJSONFile;
 
 $(document).ready(function(){
     $(".btn-primary").click(function(){

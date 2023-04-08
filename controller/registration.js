@@ -24,7 +24,7 @@ async function readJSONFile(url) {
 
 let courseList = await readJSONFile("http://localhost:8080/model/courseList.json");
 
-module.exports = readJSONFile;
+//module.exports = readJSONFile;
 
 $(document).ready(function(){
     $("#registered-courses-table").hide();
