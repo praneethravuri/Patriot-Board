@@ -1,0 +1,80 @@
+{
+    "CS 550" : {
+        "instrName" : "Mahmood Riyadh",
+        "location" : "Distance Learning Course (Online)",
+        "description" : "This is a graduate Database Systems course designed to provide students with both the theoretical knowledge\nand practical hands-on project experience on how to design and develop database applications and\ninformation systems using Relational Database Management Systems.",
+        "timings" : "Asynchronous"
+    },
+    "SWE 632" : {
+        "instrName" : "Dimitri Kaznachey",
+        "location" : "Sandbridge Hall | Room: 107",
+        "description" : "This course will provide a comprehensive introduction to human-computer interaction and the design and development of user interfaces, covering basic human cognition, methods for need-finding and prototyping, user-centered design, empirical and analytical methods for conducting usability evaluations, and principles for visual, information, interaction, and community design",
+        "timings" : "Monday | 7:20pm - 10:00pm"
+    },
+    "INFS 740" : {
+        "instrName" : "Reza Hemayati",
+        "location" : "Art and Design Building | Room: 2026",
+        "description" : "Information systems accessible through web and Internet are becoming prevalent. Course focuses on technologies and industry standards for accessing and manipulating persistent data that are suitable for web applications.",
+        "timings" : "Wednesday | 4:30pm - 7:10pm"
+    },
+    "CS 795" : {
+        "instrName" : "Linda Smith",
+        "location" : "Engineering Building | Room: 3030",
+        "description" : "Advanced topics not occurring in regular sequence. Notes: May be repeated for credit when subject differs. Satisfies MS breadth requirement only if explicitly stated in syllabus in given section. ",
+        "timings" : "Thursday | 6:00pm - 8:40pm"
+    },
+    "CS 551" : {
+        "instrName" : "John Johnson",
+        "location" : "Innovation Hall | Room: 109",
+        "description" : "Graphics principles and programming. Topics include graphics hardware, antialiasing, transformations, viewing, illumination, blending, texture mapping, color models, curves, surfaces, and animation.",
+        "timings" : "Tuesday | 1:30pm - 4:10pm"
+    },
+    "CS 695" : {
+        "instrName" : "Amy Lee",
+        "location" : "Exploratory Hall | Room: 3010",
+        "description" : "Special topics in computer science not occurring in regular computer science sequence.",
+        "timings" : "Wednesday | 6:00pm - 8:40pm"
+    },
+    "CS 583" : {
+        "instrName" : "Michael Brown",
+        "location" : "Art and Design Building | Room: 1040",
+        "description" : "Topics include analyzing sequential and parallel algorithmic strategies such as greedy methods, divide and conquer strategies, dynamic programming, search and traversal techniques, and approximation algorithms; and analyzing specific algorithms falling into these classes, NP-Hard and NP-Complete problems.",
+        "timings" : "Tuesday | 9:00am - 11:40am"
+    },
+    "STAT 550" : {
+        "instrName" : "Jennifer Kim",
+        "location" : "Exploratory Hall | Room: 2040",
+        "description" : "Special topics in applied statistics of interest to graduate students in statistics certificate programs. Notes: May be repeated for credit when topic is different.",
+        "timings" : "Monday | 9:00am - 11:40am"
+    },
+    "MATH 650" : {
+        "instrName" : "David Lee",
+        "location" : "Art and Design Building | Room: 3080",
+        "description" : "",
+        "timings" : "Wednesday | 1:30pm - 4:10pm"
+    },
+    "ECON 420" : {
+        "instrName" : "Susan Park",
+        "location" : "Innovation Hall | Room: 101",
+        "description" : "",
+        "timings" : "Friday | 9:00am - 11:40am"
+    },
+    "CHEM 430" : {
+        "instrName" : "Michael Davis",
+        "location" : "Planetary Hall | Room: 3030",
+        "description" : "",
+        "timings" : "Thursday | 1:30pm - 4:10pm"
+    },
+    "PHYS 650" : {
+        "instrName" : "Karen Johnson",
+        "location" : "Art and Design Building | Room: 1080",
+        "description" : "",
+        "timings" : "Tuesday | 1:30pm - 4:10pm"
+    },
+    "ENG 520" : {
+        "instrName" : "James Wilson",
+        "location" : "Engineering Building | Room: 1020",
+        "description" : "",
+        "timings" : "Wednesday | 9:00am - 11:40am"
+    }
+}

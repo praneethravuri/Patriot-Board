@@ -3,7 +3,7 @@ async function readJSONFile(url) {
     return data;
 }
 
-let data = await readJSONFile("http://localhost:8080/JSON/credentials.json");
+let data = await readJSONFile("http://localhost:8080/model/credentials.json");
 
 module.exports = readJSONFile;
 
