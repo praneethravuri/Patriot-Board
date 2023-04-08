@@ -14,3 +14,8 @@ Open the website using http-server:
 3. Open "localhost:8080/index.html" for login page
 4. Open "localhost:8080/home-page.html" for Homepage
 5. Open "localhost:8080/registration.html" for Registration
+
+Testing with JEST
+1. Initialize package.json. Run the command "npm init -y"
+2. Install JEST. "npm install --save-dev jest"
+3. Change the value of test in Scripts in package.json to "jest"

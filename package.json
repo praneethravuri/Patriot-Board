@@ -1,0 +1,15 @@
+{
+  "name": "632-project",
+  "version": "1.0.0",
+  "description": "GMU Course Registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
