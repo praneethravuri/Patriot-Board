@@ -22,7 +22,7 @@ async function readJSONFile(url) {
     return data;
 }
 
-let courseList = await readJSONFile("http://localhost:8080/model/courseList.json");
+let courseList = await readJSONFile("./model/courseList.json");
 
 //module.exports = readJSONFile;
 
