@@ -5,6 +5,8 @@ async function readJSONFile(url) {
 
 let data = await readJSONFile("http://localhost:8080/JSON/credentials.json");
 
+module.exports = readJSONFile;
+
 $(document).ready(function(){
     $(".btn-primary").click(function(){
         let studentID = $("#student-id").val();

@@ -10,6 +10,6 @@ test("check if the data is retrieved", async () => {
         }
     }
 
-    const data = await  $.getJSON("http://localhost:8080/JSON/courseList.json");
+    const data = await  $.getJSON("http://localhost:8080/JSON/credentials.json");
     expect(data).toBe(testData)
 });

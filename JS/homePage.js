@@ -18,6 +18,8 @@ async function readJSONFile(url) {
 let courseList = await readJSONFile("http://localhost:8080/JSON/courseList.json");
 let studentData = await readJSONFile("http://localhost:8080/JSON/studentData.json");
 
+module.exports = readJSONFile;
+
 let currStudentData = studentData[studentEmail];
 
 for(let i = 1; i<=3; i++){
