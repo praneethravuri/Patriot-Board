@@ -1,4 +1,4 @@
-const readJSONFile = require("../JS/registration.js").readJSONFile;
+const readJSONFile = require("../controller/registration.js").readJSONFile;
 
 
 test("check if the data is retrieved", async () => {
@@ -11,7 +11,7 @@ test("check if the data is retrieved", async () => {
     }
 
     setTimeout( () => {
-        const data = $.getJSON("http://localhost:8080/JSON/studentData.json");
+        const data = $.getJSON("./model/studentData.json");
         expect(data).toBe(testData)
     }, 5000)
 });
