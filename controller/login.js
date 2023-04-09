@@ -14,6 +14,7 @@ $(document).ready(function(){
         let url = "/home-page.html"
         if(studentID in data){
             if(data[studentID].password === password){
+                localStorage.setItem("studentEmail", studentID);
                 window.location.href = "./home-page.html";
             }
             else{
