@@ -11,10 +11,10 @@ $(document).ready(function(){
     $(".btn-primary").click(function(){
         let studentID = $("#student-id").val();
         let password = $("#password").val();
-
+        let url = "/home-page.html"
         if(studentID in data){
             if(data[studentID].password === password){
-                window.location.href = "home-page.html";
+                window.location.href = "./home-page.html";
             }
             else{
                 alert("The credentials entered are incorrect");
