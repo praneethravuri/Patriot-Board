@@ -11,7 +11,7 @@ test("check if the data is retrieved", async () => {
     }
 
     setTimeout( () => {
-        const data = $.getJSON("./model/courseList.json");
+        const data = $.getJSON("./model/credentials.json");
         expect(data).toBe(testData)
     }, 5000)
 });

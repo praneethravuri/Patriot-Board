@@ -3,16 +3,18 @@ async function readJSONFile(url) {
     return data;
 }
 
-let data = await readJSONFile("http://localhost:8080/model/credentials.json");
+let data = await readJSONFile("./model/credentials.json");
+
+//module.exports = readJSONFile;
 
 $(document).ready(function(){
     $(".btn-primary").click(function(){
         let studentID = $("#student-id").val();
         let password = $("#password").val();
-
+        let url = "/home-page.html"
         if(studentID in data){
             if(data[studentID].password === password){
-                window.location.href = "home-page.html";
+                window.location.href = "./home-page.html";
             }
             else{
                 alert("The credentials entered are incorrect");

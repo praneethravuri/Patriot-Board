@@ -15,8 +15,10 @@ async function readJSONFile(url) {
     return data;
 }
 
-let courseList = await readJSONFile("http://localhost:8080/model/courseList.json");
-let studentData = await readJSONFile("http://localhost:8080/model/studentData.json");
+let courseList = await readJSONFile("./model/courseList.json");
+let studentData = await readJSONFile("./model/studentData.json");
+
+//module.exports = readJSONFile;
 
 let currStudentData = studentData[studentEmail];
 
@@ -24,6 +26,7 @@ for(let i = 1; i<=3; i++){
     let currentCourse = currStudentData[i-1];
     document.getElementById("course-title-" + i.toString()).innerHTML = currentCourse;
     document.getElementById("course-prof-" + i.toString()).innerHTML = courseList[currentCourse].instrName;
+    document.getElementById("course-desc-" + i.toString()).innerHTML = courseList[currentCourse].description;
     document.getElementById("course-loc-" + i.toString()).innerHTML = courseList[currentCourse].location;
     document.getElementById("timings-" + i.toString()).innerHTML = courseList[currentCourse].timings;
 }
