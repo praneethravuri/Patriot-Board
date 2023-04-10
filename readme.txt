@@ -1,12 +1,3 @@
-1. Open the bs.html page and click on Login
-2. Once you have logged in, homepage.html is opened which gives a brief overview of all the classes the student has taken along with the grades of each class.
-3. Announcements, assignments, quizzes, discussions, and messages of each class is shown in the drop down table called "Alerts" beside the grades
-4. In the registration.html page, a search box is present that is used to search / browse for classes. One can simply select the branch or enter their choice.
-5. CSS files are in the CSS folder
-6. Logos are in the Mason Logos folder
-7. Internet connection is required to view the bootstrap files
-8. Please note that the website works best in the chrome browser
-
 Open the website using http-server:
 
 1. Install http-server by running the command "npm install http-server"
@@ -14,6 +5,11 @@ Open the website using http-server:
 3. Open "localhost:8080/index.html" for login page
 4. Open "localhost:8080/home-page.html" for Homepage
 5. Open "localhost:8080/registration.html" for Registration
+6. The correct credentials to access the website are in model/credentials.json
+7. When a particular user has signed in, the courses unique to the user are displayed on the home-page.html along with the grades
+8. In registration.html, user can enter the department code (eg infs, cs, swe) in the course department input box and the course number in the course number input box to search for a specific course. On clicking the submit button, the user can see the search results in the box on the right side
+9. When add course is clicked, the student has registered to all the courses in the search results
+10. All the available courses are present in model/courseList.json
 
 Testing with JEST
 1. Go to project directory and install npm install --save-dev jest
