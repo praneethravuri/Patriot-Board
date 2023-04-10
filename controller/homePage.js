@@ -31,6 +31,12 @@ for(let i = 1; i<=3; i++){
     document.getElementById("course-desc-" + i.toString()).innerHTML = courseList[currentCourse].description;
     document.getElementById("course-loc-" + i.toString()).innerHTML = courseList[currentCourse].location;
     document.getElementById("timings-" + i.toString()).innerHTML = courseList[currentCourse].timings;
+    document.getElementById("course-titles-" + i.toString()).innerHTML = currentCourse;
+
+    document.getElementById("course-profe-" + i.toString()).innerHTML = courseList[currentCourse].instrName;
+    document.getElementById("course-descr-" + i.toString()).innerHTML = courseList[currentCourse].description;
+    document.getElementById("course-loca-" + i.toString()).innerHTML = courseList[currentCourse].location;
+    document.getElementById("timing-" + i.toString()).innerHTML = courseList[currentCourse].timings;
 }
 
 $(document).ready(function(){
