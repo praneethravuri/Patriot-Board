@@ -16,4 +16,8 @@ Open the website using http-server:
 5. Open "localhost:8080/registration.html" for Registration
 
 Testing with JEST
-1. Open the website by running the command "http-server --cors -c-1"
+1. Go to project directory and install npm install --save-dev jest
+2. install npm install --save-dev puppeteer
+3. run the command jest filename.test.js
+4. server should be active for running the scripts 
+5. screenshots and videos are provided in jest video folder
