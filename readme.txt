@@ -16,7 +16,4 @@ Open the website using http-server:
 5. Open "localhost:8080/registration.html" for Registration
 
 Testing with JEST
-1. Initialize package.json. Run the command "npm init -y"
-2. Install JEST. "npm install --save-dev jest"
-3. Change the value of test in Scripts in package.json to "jest"
-4. Go to the folder, Jest Testing, and run the command npm test to test the files
+1. Open the website by running the command "http-server --cors -c-1"
