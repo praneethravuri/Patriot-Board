@@ -1,170 +1,60 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+
+
+nav {
+    padding: 20px;
+    background-color: green;
+    border-bottom: 10px solid #ffd700;
 }
 
-/*COURSE CARDS*/
-
-.curr-semester{
-    margin-bottom: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+.container-fluid, #navbarNav, nav a, li, ul, button{
+    background-color: green;
 }
 
-.flex-container{
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 768px) {
+nav {
+    padding: 10px;
+    font-size: 18px;
+    }
 }
 
-.courses{
-    width: 90%;
+@media (max-width: 576px) {
+    nav {
+    padding: 5px;
+    font-size: 16px;
+    }
+}
+
+#navbarNav li a{
+    color: whitesmoke;
+}
+
+.student-details-table{
+    width: 50%;
     margin: auto;
-    padding: 10px;
-    margin-top: 30px;
+}
+
+.table-bordered th, td{
     text-align: center;
+
 }
 
-
-.card-body{
-    border: 2px solid whitesmoke;
-    margin: 10px;
-    text-align: center;
-}
-.card-content{
-    margin: 20px;
+.container{
+    border: 2px solid black;
 }
 
-.class-link a{
-    background-color: #006633;
+.view-btn{
     padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
     color: white;
-}
-
-.class-link a{
     transition: all 0.3s ease 0s;
 }
 
-.class-link a:hover{
+.view-btn:hover{
     color: gold;
 }
 
-.alerts-grades-past-classes{
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-.card-border{
-    border: 2px solid whitesmoke;
-}
-
-.alert-content{
-    display: flex;
-    justify-content: space-between;
-    margin:5px 10px 5px 10px;
-    background-color: red;
-}
-
-.card-size{
-    width: 33%;
-}
-
-.title{
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.card-border{
-    margin: 10px;
-}
-
-.alerts-heading, .grades-heading, .tools-heading{
-    text-align: center;
-}
-
-.grades{
-    width: 33%;
-    text-align: center;
-}
-
-.tools-box{
-    width: 33%;
-}
-
-.course-grade{
-    margin: 10px 10px 20px 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.course-1, .course-2, .course-3{
-    flex: 1;
-    font-weight: 500;
-}
-
-.grade-box{
-    padding: 10px;
-    border: 1px solid white;
-}
-
-.alert-content, .title, .title a, .alerts, .drop-down-image{
-    background-color: white;
-}
-
-.alerts-heading, .alerts-heading h1, .grades-heading, .grades-heading h1, .tools-heading, .tools-heading h1{
-    background-color: #006633;
-}
-
-.alerts-heading h1, .grades-heading h1{
-    color: white;
-}
-
-.student-info{
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.student-info img{
-    width: 7%;
-}
-
-.student-info-table{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-table{
-    border: 2px solid whitesmoke;
-    margin: 10px;
-}
-
-table td{
-    padding: 20px;
-}
-
-#currStudentInfo td{
-    font-weight: 500;
-}
-
-.grade-subject-1, .grade-subject-2, .grade-subject-3{
-    padding: 5px;
-    font-weight: 500;
-}
-
-.grade-subject-1{
-    background-color: rgb(0, 255, 0);
-}
-.grade-subject-2{
-    background-color: yellow;
-}
-.grade-subject-3{
-    background-color: red;
+.card {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }

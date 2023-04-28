@@ -8,7 +8,7 @@
     "SWE 632" : {
         "instrName" : "Dimitri Kaznachey",
         "location" : "Sandbridge Hall | Room: 107",
-        "description" : "This course will provide a comprehensive introduction to human-computer interaction and the design and development of user interfaces, covering basic human cognition, methods for need-finding and prototyping, user-centered design, empirical and analytical methods for conducting usability evaluations, and principles for visual, information, interaction, and community design",
+        "description" : "This course covers human-computer interaction, user interface design and development, including need-finding, prototyping, user-centered design, usability evaluation methods, and design principles for visual, information, interaction, and community design.",
         "timings" : "Monday | 7:20pm - 10:00pm"
     },
     "INFS 740" : {
@@ -38,7 +38,7 @@
     "CS 583" : {
         "instrName" : "Michael Brown",
         "location" : "Art and Design Building | Room: 1040",
-        "description" : "Topics include analyzing sequential and parallel algorithmic strategies such as greedy methods, divide and conquer strategies, dynamic programming, search and traversal techniques, and approximation algorithms; and analyzing specific algorithms falling into these classes, NP-Hard and NP-Complete problems.",
+        "description" : "This course covers algorithmic strategies like greedy, divide and conquer, dynamic programming, search and traversal, and approximation, and analyzes algorithms in these categories, including NP-Hard and NP-Complete problems.",
         "timings" : "Tuesday | 9:00am - 11:40am"
     },
     "STAT 550" : {

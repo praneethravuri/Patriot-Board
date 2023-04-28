@@ -11,38 +11,37 @@ let studentData = await readJSONFile("./model/studentData.json");
 let studentDetails = await readJSONFile("./model/credentials.json");
 
 studentDetails = studentDetails[studentEmail];
+let studentCourses = studentData[studentEmail];
+let courseDetails = courseList;
 
 
 $(document).ready(function(){
     let row = "<tr>"
-    row += "<td>" + studentDetails["name"] + "</td>"
-    row += "<td>" + studentDetails["g-number"] + "</td>"
-    row += "<td>" + studentDetails["phone"] + "</td>"
-    row += "<td>" + studentEmail + "</td>"
+    row += "<td class='text-nowrap'>" + studentDetails["name"] + "</td>"
+    row += "<td class='text-nowrap'>" + studentDetails["g-number"] + "</td>"
+    row += "<td class='text-nowrap'>" + studentDetails["phone"] + "</td>"
+    row += "<td class='text-nowrap'>" + studentEmail + "</td>"
     $("#currStudentInfo").append(row);
 });
 
-let currStudentData = studentData[studentEmail];
+const courseCardsContainer = document.getElementById('courseCards');
 
-for(let i = 1; i<=3; i++){
-    let currentCourse = currStudentData[i-1];
-    document.getElementById("course-title-" + i.toString()).innerHTML = currentCourse;
-    document.getElementById("course-prof-" + i.toString()).innerHTML = courseList[currentCourse].instrName;
-    document.getElementById("course-desc-" + i.toString()).innerHTML = courseList[currentCourse].description;
-    document.getElementById("course-loc-" + i.toString()).innerHTML = courseList[currentCourse].location;
-    document.getElementById("timings-" + i.toString()).innerHTML = courseList[currentCourse].timings;
-    document.getElementById("course-titles-" + i.toString()).innerHTML = currentCourse;
+        studentCourses.forEach((course) => {
+            const courseDetailsObj = courseDetails[course];
+            const cardHtml = `
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">${course}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">${courseDetailsObj.instrName}</h6>
+                            <p class="card-text">${courseDetailsObj.location}</p>
+                            <p class="card-text">${courseDetailsObj.description}</p>
+                            <p class="card-text">${courseDetailsObj.timings}</p>
+                            <p class="card-text"><button class = 'view-btn'>View Course</button></p>
 
-    document.getElementById("course-profe-" + i.toString()).innerHTML = courseList[currentCourse].instrName;
-    document.getElementById("course-descr-" + i.toString()).innerHTML = courseList[currentCourse].description;
-    document.getElementById("course-loca-" + i.toString()).innerHTML = courseList[currentCourse].location;
-    document.getElementById("timing-" + i.toString()).innerHTML = courseList[currentCourse].timings;
-}
-
-$(document).ready(function(){
-    for(let i = 1; i<=3; i++){
-        let currentCourse = currStudentData[i-1];
-        let id = "course-" + i.toString();
-        $("#" + id).text(currentCourse);
-    }
-});
+                        </div>
+                    </div>
+                </div>
+            `;
+            courseCardsContainer.innerHTML += cardHtml;
+        });

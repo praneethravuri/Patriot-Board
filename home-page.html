@@ -4,291 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage - George Mason University</title>
+    <title>Patriot Board - Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/template.css">
+    <link rel="stylesheet" href="./CSS/home-page.css">
+    <link rel="stylesheet" href="./CSS/nav-bar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./CSS/nav-bar.css">
-   <link rel="stylesheet" href="./CSS/home-page.css">
-   
-  <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
--->
 </head>
 <body>
 
-    <header>
-        <img src="./Mason Logos/GMU_PLogo_KO+Gold.png" alt="" class="gmu-logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Student Profile</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="./registration.html">Registration</a></li>
-                <li><a href="#">Grades</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="./index.html">Logout</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-green">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Images/logo-no-background.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="logout-btn">Logout</a>
+            </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        </div>
+    </nav>
 
-    <div class="student-info">
-        <img src="./Images/round-account-button-with-user-inside.png" alt="">
-        <div class="student-info-table">
-            <table id="currStudentInfo">
-                <tr>
-                </tr>
+    <div class="student-details-table">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th class="text-nowrap">Name</th>
+                        <th class="text-nowrap">G-Number</th>
+                        <th class="text-nowrap">Contact Number</th>
+                        <th class="text-nowrap">Net ID</th>
+                    </tr>
+                </thead>
+            <tbody id="currStudentInfo">
+            </tbody>
             </table>
-            </div>
         </div>
     </div>
 
 
-    <section class="courses">
-        <h1 class="curr-semester">Spring 2023</h1>
-        <div class="flex-container">
-            
-            <div class="card-body card-1"> 
-                <h3 class="course-title card-content " id="course-title-1"></h3>
-                <p class="course-desc card-content" id ="course-desc-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content " id="course-prof-1"></p>
-                <p class="class-location card-content " id="course-loc-1"></p>
-                <p id="timings-1"></p>
-                <div class="class-link card-content">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#course1">
-                    View Course
-                </button>
-                </div>
-            </div>
-
-            <div class="card-body card-1"> 
-                <h3 class="course-title card-content" id="course-title-2"></h3>
-                <p class="course-desc card-content" id ="course-desc-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content " id="course-prof-2"></p>
-                <p class="class-location card-content " id="course-loc-2"></p>
-                <p id="timings-2"></p>
-                <div class="class-link card-content">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#course2">
-                    View Course
-                </button>
-                </div>
-            </div>
-
-            <div class="card-body card-1"> 
-                <h3 class="course-title card-content" id="course-title-3"></h3>
-                <p class="course-desc card-content" id ="course-desc-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p class="professor card-content " id="course-prof-3"></p>
-                <p class="class-location card-content " id="course-loc-3"></p>
-                <p id="timings-3"></p>
-                <div class="class-link card-content">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#course3">
-                    View Course
-                </button>
-                </div>
-            </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center mb-5">Student Courses</h2>
+          </div>
         </div>
-    </section>
-<!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="course1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="course-titles-1">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <div class="row" id="course-list">
+          <div class="d-flex flex-wrap justify-content-between" id="courseCards"></div>
+        </div>
       </div>
-      <div class="modal-body">
-                <p id ="course-descr-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p id="course-profe-1"></p>
-                <p id="course-loca-1"></p>
-                <p id="timing-1"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"  data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="course2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="course-titles-2">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-                <p  id ="course-descr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p  id="course-profe-2"></p>
-                <p  id="course-loca-2"></p>
-                <p id="timing-2"></p>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"  data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="course3" tabindex="-1" role="dialog" aria-labelledby="course3Title" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="course-titles-3"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-                <p  id ="course-descr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, dolores.</p>
-                <p  id="course-profe-3"></p>
-                <p  id="course-loca-3"></p>
-                <p id="timing-3"></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary"  data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    <section class="alerts-grades-past-classes">
-
-        <div class="flex-container">
-
-            <div class="alerts card-border card-size">
-                <div class="alerts-heading">
-                    <h1>Alerts</h1>
-                </div>
-                <div class="alert-content">
-                    <div class="title">
-                        <a href="#">Announcements</a>
-                    </div>
-                    <div class="drop-down-image">
-                        <img src="./Images/drop-down.png" alt="">
-                    </div>
-                    
-                </div>
-                <div class="alert-content">
-                    <div class="title">
-                        <a href="#">Assignments</a>
-                    </div>
-                    <div class="drop-down-image">
-                        <img src="./Images/drop-down.png" alt="">
-                    </div>
-                </div>
-                <div class="alert-content">
-                    <div class="title">
-                        <a href="#">Quizzes</a>
-                    </div>
-                    <div class="drop-down-image">
-                        <img src="./Images/drop-down.png" alt="">
-                    </div>
-                </div>
-                <div class="alert-content">
-                    <div class="title">
-                        <a href="#">Discussions</a>
-                    </div>
-                    <div class="drop-down-image">
-                        <img src="./Images/drop-down.png" alt="">
-                    </div>
-                </div>
-                <div class="alert-content">
-                    <div class="title">
-                        <a href="#">Messages</a>
-                    </div>
-                    <div class="drop-down-image">
-                        <img src="./Images/drop-down.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="grades card-border">
-                <div class="grades-heading">
-                    <h1>Grades</h1>
-                </div>
-                <div class="course-grade">
-                    <p id="course-1"></p>
-                    <p class = "grade-subject-1">100/100</p>
-                </div>
-                <hr>
-                <div class="course-grade">
-                    <p id="course-2"></p>
-                    <p class = "grade-subject-2">76/100</p>
-                </div>
-                <hr>
-                <div class="course-grade">
-                    <p id="course-3"></p>
-                    <p class = "grade-subject-3">45/100</p>
-                </div>
-                <hr>
-                <div class="current-sem-gpa">
-                    <h1 class="gpa">GPA: 3.1</h1>
-                </div>
-            </div>
+      
 
 
-                <div class="alerts card-border card-size">
-                    <div class="alerts-heading">
-                        <h1>Tools</h1>
-                    </div>
-                    <div class="alert-content">
-                        <div class="title">
-                            <a href="#">Collaborate Ultra</a>
-                        </div>
-                        <div class="drop-down-image">
-                            <img src="./Images/drop-down.png" alt="">
-                        </div>
-                        
-                    </div>
-                    <div class="alert-content">
-                        <div class="title">
-                            <a href="#">Goals</a>
-                        </div>
-                        <div class="drop-down-image">
-                            <img src="./Images/drop-down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="alert-content">
-                        <div class="title">
-                            <a href="#">Respondus Lockdown Browser</a>
-                        </div>
-                        <div class="drop-down-image">
-                            <img src="./Images/drop-down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="alert-content">
-                        <div class="title">
-                            <a href="#">Outlook</a>
-                        </div>
-                        <div class="drop-down-image">
-                            <img src="./Images/drop-down.png" alt="">
-                        </div>
-                    </div>
-                    <div class="alert-content">
-                        <div class="title">
-                            <a href="#">Evaluations</a>
-                        </div>
-                        <div class="drop-down-image">
-                            <img src="./Images/drop-down.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script type="module" src="./controller/homePage.js"></script>
 </body>
 </html>
