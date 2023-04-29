@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patriot Board - Homepage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/template.css">
-    <link rel="stylesheet" href="./CSS/home-page.css">
-    <link rel="stylesheet" href="./CSS/nav-bar.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/template.css" />
+    <link rel="stylesheet" href="./CSS/home-page.css" />
+    <link rel="stylesheet" href="./CSS/nav-bar.css" />
+    <link rel="stylesheet" href="./CSS/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
+  </head>
+  <body>
 
 
-</head>
-<body>
-
+    <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-green">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./Images/logo-no-background.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./Images/logo-no-background.svg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
+              <a class="nav-link" href="#">Courses</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+              <a class="nav-link" href="#">Registration</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
+              <a class="nav-link" href="#">Help</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" id="logout-btn">Logout</a>
+              <a class="nav-link" href="#" id="logout-btn">Logout</a>
             </li>
-            </ul>
+          </ul>
         </div>
-        </div>
+      </div>
     </nav>
 
+    <!--Student Details-->
     <div class="student-details-table">
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped table-sm">
-                <thead>
-                    <tr>
-                        <th class="text-nowrap">Name</th>
-                        <th class="text-nowrap">G-Number</th>
-                        <th class="text-nowrap">Contact Number</th>
-                        <th class="text-nowrap">Net ID</th>
-                    </tr>
-                </thead>
-            <tbody id="currStudentInfo">
-            </tbody>
-            </table>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-sm">
+          <thead>
+            <tr>
+              <th class="text-nowrap">Name</th>
+              <th class="text-nowrap">G-Number</th>
+              <th class="text-nowrap">Contact Number</th>
+              <th class="text-nowrap">Net ID</th>
+            </tr>
+          </thead>
+          <tbody id="currStudentInfo"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--Student Courses-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center mb-5">Student Courses</h2>
         </div>
+      </div>
+      <div class="row" id="course-list">
+        <div
+          class="d-flex flex-wrap justify-content-between"
+          id="courseCards"
+        ></div>
+      </div>
     </div>
 
 
-    <div class="container">
+    <!--Footer-->
+    <footer class="bg-light">
+      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="text-center mb-5">Student Courses</h2>
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+                At Mason, we believe it will take all of us together to reimagine a better tomorrow. We are unapologetically focused on action, ready to take on the world’s full, messy truths so that we may learn and grow wiser from them
+            </p>
+          </div>
+          <div class="col-md-4" id="quick-links">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Registration</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <address>
+              4400 University Dr, <br />
+              Fairfax, VA 22030<br />
+              <abbr title="Phone">P:</abbr> (703) 993-1000
+            </address>
           </div>
         </div>
-        <div class="row" id="course-list">
-          <div class="d-flex flex-wrap justify-content-between" id="courseCards"></div>
-        </div>
       </div>
-      
-
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
     <script type="module" src="./controller/homePage.js"></script>
-</body>
+  </body>
 </html>

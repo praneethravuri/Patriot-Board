@@ -1,60 +1,99 @@
-
-
 nav {
-    padding: 20px;
-    background-color: green;
-    border-bottom: 10px solid #ffd700;
+  padding: 20px;
+  background-color: green;
+  border-bottom: 10px solid #ffd700;
 }
 
-.container-fluid, #navbarNav, nav a, li, ul, button{
-    background-color: green;
+.container-fluid,
+#navbarNav,
+nav a,
+li,
+ul,
+button {
+  background-color: green;
 }
 
 @media (max-width: 768px) {
-nav {
+  nav {
     padding: 10px;
     font-size: 18px;
-    }
+  }
 }
 
 @media (max-width: 576px) {
-    nav {
+  nav {
     padding: 5px;
     font-size: 16px;
-    }
+  }
 }
 
-#navbarNav li a{
-    color: whitesmoke;
+#navbarNav li a {
+  color: whitesmoke;
 }
 
-.student-details-table{
-    width: 50%;
-    margin: auto;
+.student-details-table {
+  width: 50%;
+  margin: auto;
 }
 
-.table-bordered th, td{
-    text-align: center;
-
+.table-bordered th,
+td {
+  text-align: center;
 }
 
-.container{
-    border: 2px solid black;
+.view-btn {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease 0s;
 }
 
-.view-btn{
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: all 0.3s ease 0s;
-}
-
-.view-btn:hover{
-    color: gold;
+.view-btn:hover {
+  color: gold;
 }
 
 .card {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  #courseCards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1;
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  min-height: 400px; /* set a minimum height for the cards */
+}
+
+.col {
+  margin-right: 20px;
+}
+
+#course-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
