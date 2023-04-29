@@ -4,160 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Patriot Board - Registration</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/nav-bar.css">
     <link rel="stylesheet" href="./CSS/registration.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-
+    <link rel="stylesheet" href="./CSS/template.css">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
 </head>
 <body>
-<header>
-    <img src="./Mason Logos/GMU_PLogo_KO+Gold.png" alt="" class="gmu-logo">
-    <nav>
-        <ul class="nav-links">
-            <li><a href="home-page.html">Home</a></li>
-            <li><a href="#">Student Profile</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Registration</a></li>
-            <li><a href="#">Grades</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="./index.html">Logout</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="seperation">
-    <div id="col-1">
-        <form>
-            <div class="groupOfForm">
-                <label> Term:</label>
-                <select>
-                    <option value="Spring-2023" selected>Spring 2023</option>
-                    <option value="Summer-2023">Summer-2023</option>
-                    <option value="Fall-2023">Fall-2023</option>
-
-                </select>
-
-            </div>
-            <div class="groupOfInput">
-                <label> Department : </label>
-                <div class="groupOfForm">
-                <div class = "close">
-                    <input type="radio" value="Computer_Science" name="department" checked/> Computer Science
-                </div>
-                <div class = "close">
-                    <input type="radio" value="Software_Engineering" name="department"/> Software Engineering
-                    </div>
-                    <div class = "close">
-                    <input type="radio" value="Other" name="department"/>
-                    <input list="Departments" name="department" id="department">
-                    <datalist id="Departments"> Other
-                        <option value="Information Systems">
-                        <option value="Data Analytics">
-                        <option value="Cyber Security">
-                        <option value="Health Informatics">
-                        <option value="Computer Engineering">
-                    </datalist>
-                    </div>
-                </div>
-            </div>
-            <div class="groupOfForm">
-            <div class = "close">
-                <label name="dcode"> Course Department </label>
-                <input type="text" name="dcode" id="dcode">
-                </div>
-                <div class = "close">
-                <label name="cno"> Course Number</label>
-                <input type="text" name="cno" id="cno">
-                </div>
-            </div>
-
-            <div class="groupOfForm">
-                <button type="button" style="cursor: pointer;" id="advanced-option"> Advanced Options</button>
-            </div>
-
-            <div input="groupOfInput" style="display:none" id="AdvancedSearch">
-                <div class="groupOfForm">
-                    <label name="ClassType"> Class Type </label>
-                    <div class = "close">
-                    <input type="radio" value="InPerson" name="ClassType" checked/> In Person
-                    </div>
-                    <div class = "close">
-                    <input type="radio" value="Online" name="ClassType"/> Online
-                    </div>
-                    <div class = "close">
-                    <input type="radio" value="Both" name="ClassType"/> Both
-                    </div>
-                </div>
-                <div class="groupOfForm">
-                    <label name="iName"> Instructor </label>
-                    <input type="text" name="iName" id="cName">
-                    <label name="Available"></label>
-
-                    <label> Meeting Day
-                        <select id="cName">
-                            <option value="Any" selected>Any</option>
-                            <option value="Monday">Monday</option>
-                            <option value="Tuesday">Tuesday</option>
-                            <option value="Wednesday">Wednesday</option>
-                            <option value="Thursday">Thursday</option>
-                            <option value="Friday">Friday</option>
-                            <option value="Saturday">Saturday</option>
-                            <option value="Sunday">Sunday</option>
-                        </select>
-                </div>
-                <div class="groupOfForm">
-                    <input type="checkbox" name="available" id="cb">
-                    <label for="available">Courses with Seats available </label>
-                    <input type="checkbox" name="available" id="cb">
-                    <label for="available">Courses with Waitllists available </label>
-                </div>
-            </div>
-
-
-            <div class="groupOfForm">
-                <button class="button" type="button" id="search-btn">Search</button>
-            </div>
-        </form>
-    </div>
-    <div id="col-2">
-        <div id="row21">
-            <h4 id="search-result"> Search Results </h4>
-            <div id="results" style="display:none">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <td>Course</td>
-                        <td>Instructor Name</td>
-                        <td>Location</td>
-                        <td>Timings</td>
-                    </tr>
-                    </thead>
-                    <tbody id="search-result-course">
-                    </tbody>
-                </table>
-                <button id="add-class">Add Courses</button>
-            </div>
-        </div>
-        <div id="row22">
-            <h4 id="courses-status"></h4>
-            <table class="table" id="registered-courses-table">
-                <thead>
-                    <tr>
-                        <td>Course</td>
-                        <td>Instructor Name</td>
-                        <td>Location</td>
-                        <td>Timings</td>
-                    </tr>
-                </thead>
-                <tbody id="registered-courses-table-body">
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-<script type="module" src="./controller/registration.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </body>
 </html>
