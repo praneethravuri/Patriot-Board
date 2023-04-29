@@ -1,132 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
+  <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
+  <link rel="stylesheet" href="./CSS/nav-bar.css" />
+  <link rel="stylesheet" href="./CSS/footer.css">
+  <link rel="stylesheet" href="./CSS/template.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <title>Patriot Board - Login</title>
+</head>
 
- <style>
-.card {
-  border-radius: 30px;
-  box-shadow: 10px  8px 16px rgba(0,0,0,.05), 10px 8px 16px rgba(0,0,0,.1);
-}
-*{
-  text-decoration: none;
-}
-.btn-primary a{
-  color: white;
-}
-.card-title {
-  font-weight: 900;
-}
-
-.form-control {
-  height: 55px;
-  font-size: 20px;
-  border-color: #ced4da;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border-color: #6c757d;
-}
-
-.btn-primary {
-  background-color: #007
-}
-nav.navbar {
-  background-color: #f8f9fa;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-nav.navbar a.navbar-brand img {
-  margin-right: 10px;
-}
-
-nav.navbar a.nav-link {
-  color: #212529;
-  margin-left: 20px;
-}
-
-nav.navbar a.nav-link:hover {
-  color: #007bff;
-}
-
-footer {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-footer h5 {
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-  font-size: 18px;
-}
-/*
-footer ul.list-unstyled li a {
-  color:
-}
-*/
-body{  background-color:#006633;
-}
-
-  </style>
-    <title>GMU Course registration</title>
-  </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="GMU.png" alt="Logo" width="70"></a>
-	<a class="navbar-brand" href="#">George Mason University</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-green">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./Images/logo-no-background.svg" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact US</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
- 
-</nav>
+  </nav>
 
-<div class="container my-5">
+<div class="container my-5"> 
   <div class="row">
-    <div class="col-md-6 mb-4">
-      <div class="card bg-light">
+    <div class="col-md-6 mb-4 mr-10">
+      <div class="card bg-white" style="border-radius: 10px;">
+        <h2 class="text-center mt-3">Login</h2>
         <div class="card-body">
           <h5 class="card-title text-center mb-4"></h5>
 
           <form>
             <div class="mb-3">
               <label for="email" class="form-label visually-hidden">Email address</label>
-              <input type="email" class="form-control" id="student-id" aria-describedby="emailHelp" placeholder="netid@gmu.edu">
+              <input type="email" class="form-control" id="student-id" aria-describedby="emailHelp"
+                placeholder="netid@gmu.edu">
               <div id="emailHelp" class="form-text"></div>
             </div>
 
-            <div class="mb-3">
-              <label for="password" class="form-label visually-hidden">Password</label>
+            <div class="mb-3 mt-5">
+              <label for="password" class="form-label visually-hidden mt-5">Password</label>
               <input type="password" class="form-control" id="password" placeholder="Password">
-			<a href="#" style="color:black" >Forgot password?</a>
             </div>
 
             <div class="d-grid gap-2">
-              <button type="reset" class="btn btn-primary btn-lg" id="submit-btn">Login</button>
+              <button type="reset" class="btn btn-primary btn-lg mt-5" id="submit-btn">Login</button>
             </div>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="col-md-6 mb-4">
+    <div class="col-md-6 mb-4 mr-10">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-center mb-4">Announcements</h5>
+          <h2 class="card-title text-center mb-4">Announcements</h2>
 
-          <div class="list-group">
+          <div class="list-group mt-4">
             <a href="#" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
                 <small>3 days ago</small>
@@ -145,102 +90,69 @@ body{  background-color:#006633;
               </div>
               <p class="mb-1">Log-in to Mason360 to register for the Spring Career Fair.</p>
             </a>
-			<a href="#" class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
                 <small>1 week ago</small>
               </div>
               <p class="mb-1">The deadline for submitting graduation plans is April 18th</p>
             </a>
-			
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<footer class="bg-dark text-light">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">About Us</h5>
-        <p>
-		George Mason University
-          4400 University Drive
-          Fairfax, Virginia 22030
 
-        </pre>
-      </div>
+  
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Link</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#" class="text-light">Sitemap</a>
-          </li>
-          <li>
-            <a href="#" class="text-light">Jobs</a>
-          </li>
-          <li>
-            <a href="#" class="text-light">Accessibility</a>
-          </li>
-          <li>
-            <a href="#" class="text-light">FOIA</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Contact Us</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#" class="text-light"><i class="fas fa-envelope me-3"></i> info@example.com</a>
-          </li>
-          <li>
-            <a href="#" class="text-light"><i class="fas fa-phone me-3"></i>+1(703)993-1000</a>
-          </li>
-          <li>
-            <a href="#" class="text-light"><i class="fas fa-home me-3"></i> 123 Main St, Suite 100</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Follow Us</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#" class="me-4 text-light">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="me-4 text-light">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="me-4 text-light">
-              <i class="fab fa-google"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="me-4 text-light">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
+  <!--Footer-->
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>
+            At Mason, we believe it will take all of us together to reimagine a better tomorrow. We are unapologetically
+            focused on action, ready to take on the world's full, messy truths so that we may learn and grow wiser from
+            them
+          </p>
+        </div>
+        <div class="col-md-4" id="quick-links">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="./home-page.html">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="./Registration.html">Registration</a></li>
+            <li><a href="./help.html">Help</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <address>
+            4400 University Dr, <br />
+            Fairfax, VA 22030<br />
+            <abbr title="Phone">P:</abbr> (703) 993-1000
+          </address>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap controller -->
-    <script type="module" src="./controller/login.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap controller -->
+  <script type="module" src="./controller/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>

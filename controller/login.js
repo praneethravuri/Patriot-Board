@@ -11,6 +11,8 @@ $(document).ready(function(){
     $(".btn-primary").click(function(){
         let studentID = $("#student-id").val();
         let password = $("#password").val();
+        console.log(studentID);
+        console.log(password);
         let url = "/home-page.html"
         if(studentID in data){
             if(data[studentID].password === password){

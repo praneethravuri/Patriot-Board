@@ -29,8 +29,8 @@ const courseCardsContainer = document.getElementById('courseCards');
 studentCourses.forEach((course) => {
     const courseDetailsObj = courseDetails[course];
     let courseDescription = courseDetailsObj.description;
-    if (courseDescription.length > 200) {
-        courseDescription = courseDescription.substring(0, 217) + "...";
+    if (courseDescription.length > 100) {
+        courseDescription = courseDescription.substring(0, 107) + "...";
     }
     const cardHtml = `
         <div class="col">
