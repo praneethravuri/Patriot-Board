@@ -1,0 +1,9 @@
+.btn-primary{
+    background-color: green;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover{
+    color: gold;
+    background-color: green;
+}

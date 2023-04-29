@@ -14,3 +14,22 @@
 .active{
     border-bottom: 2px solid gold;
 }
+
+nav {
+    padding: 20px;
+    background-color: green;
+    border-bottom: 10px solid #ffd700;
+  }
+  
+  .container-fluid,
+  #navbarNav,
+  nav a,
+  li,
+  ul,
+  button {
+    background-color: green;
+  }
+
+  #navbarNav li a {
+    color: whitesmoke;
+  }

@@ -1,17 +1,4 @@
-nav {
-  padding: 20px;
-  background-color: green;
-  border-bottom: 10px solid #ffd700;
-}
 
-.container-fluid,
-#navbarNav,
-nav a,
-li,
-ul,
-button {
-  background-color: green;
-}
 
 @media (max-width: 768px) {
   nav {
@@ -25,10 +12,6 @@ button {
     padding: 5px;
     font-size: 16px;
   }
-}
-
-#navbarNav li a {
-  color: whitesmoke;
 }
 
 .student-details-table {
