@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patriot Board - Registration</title>
+    <title>Patriot Board - Help</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="./CSS/nav-bar.css" />
-    <link rel="stylesheet" href="./CSS/registration.css" />
     <link rel="stylesheet" href="./CSS/template.css" />
+    <link rel="stylesheet" href="./CSS/nav-bar.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/account.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
@@ -48,20 +48,16 @@
               <a class="nav-link" href="#">Courses</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./Registration.html"
-                >Registration</a
-              >
+              <a class="nav-link" href="./Registration.html">Registration</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./account.html"
-                >Account</a
-              >
+              <a class="nav-link" href="./account.html">Account</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./help.html">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html" id="logout-btn"
+              <a class="nav-link" href="./home-page.html" id="logout-btn"
                 >Logout</a
               >
             </li>
@@ -70,55 +66,24 @@
       </div>
     </nav>
 
-    <!--Course searching and selecting-->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 select-courses-table">
-          <div class="mb-3">
-            <h2 class="text-center section-title mt-5 section-title">
-              Search Courses
-            </h2>
-            <label for="courseSelect" class="form-label"
-              >Select a course:</label
-            >
-            <select class="form-select" id="courseSelect">
-              <option value="none">-None-</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="courseInput" class="form-label mt-3"
-              >Enter course number:</label
-            >
-            <input type="text" class="form-control" id="courseNumberInput" />
-          </div>
-          <table class="table" style="border: none">
+    <div class="student-details-table">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-sm">
             <thead>
               <tr>
-                <th
-                  style="border: none; display: none"
-                  id="available-courses-title"
-                >
-                  Available Courses
-                </th>
+                <th class="text-nowrap">Name</th>
+                <th class="text-nowrap">G-Number</th>
+                <th class="text-nowrap">Contact Number</th>
+                <th class="text-nowrap">Net ID</th>
               </tr>
             </thead>
-            <tbody id="searchResults"></tbody>
+            <tbody id="currStudentInfo"></tbody>
           </table>
         </div>
-        <div class="col-md-6 " id="selected-courses-box">
-          <h2 class="text-center section-title mt-5 section-title">
-            Selected Courses
-          </h2>
-          <div
-            class="d-flex justify-content-center align-items-center">
-            <p class="text-center my-auto template-text">Your selected courses appear here</p>
-          </div>
-        </div>
       </div>
-    </div>
+      
 
-    <!--Footer-->
-    <footer class="bg-light">
+    <footer class="bg-light mt-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -150,7 +115,8 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./controller/registration.js"></script>
+
+    <script type="module" src="./controller/account.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
   </body>
 </html>
