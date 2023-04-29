@@ -1,35 +1,53 @@
-.select-course-btn{
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: all 0.3s ease 0s;
+.select-course-btn {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease 0s;
 }
 
-.select-course-btn:hover{
-    color: gold;
-    background-color: darkgreen;
+.select-course-btn:hover {
+  color: gold;
+  background-color: darkgreen;
 }
 
 .selected-courses-box {
-    border: 2px solid black;
-    padding: 10px;
-    height: 300px;
-  }
-
-  .card.custom-card {
-    width: 300%;
-  }
-
-.remove-course-btn{
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: all 0.3s ease 0s;
+  border: 2px solid black;
+  padding: 10px;
+  height: 300px;
 }
 
-.remove-course-btn:hover{
-    color: gold;
-    background-color: darkgreen;
+.card.custom-card {
+  width: 300%;
+}
+
+.card.custom-card li {
+  text-align: left;
+}
+
+.remove-course-btn {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.remove-course-btn:hover {
+  color: gold;
+  background-color: darkgreen;
+}
+
+.section-title {
+  background-color: green;
+  color: white;
+}
+
+#selected-courses-box {
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer {
+  width: 100%;
 }

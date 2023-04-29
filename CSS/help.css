@@ -7,3 +7,13 @@
     color: gold;
     background-color: green;
 }
+
+.container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title{
+    background-color: green;
+    color: white;
+}

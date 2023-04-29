@@ -77,6 +77,7 @@ function showCourseDetails() {
 // Event listener for search results
 searchResults.addEventListener("click", function(event) {
     if (event.target.classList.contains("select-course-btn")) {
+      $(".template-text").hide();
         const courseCodeNum = event.target.classList[0].split("-");
         const courseCode = courseCodeNum[0];
         const courseNum = courseCodeNum[1];

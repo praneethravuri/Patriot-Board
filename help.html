@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patriot Board - Help</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./CSS/template.css" />
     <link rel="stylesheet" href="./CSS/nav-bar.css" />
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="./CSS/help.css">
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <link rel="stylesheet" href="./CSS/help.css" />
     <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
-</head>
-<body>
-
-<!--Navigation Bar-->
+  </head>
+  <body>
+    <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-green">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="./Images/logo-no-background.svg" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand me-auto" href="#">
+            <img src="./Images/logo-no-background.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./home-page.html">Home</a>
+              <a class="nav-link" aria-current="page" href="./home-page.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Courses</a>
@@ -49,108 +52,164 @@
               <a class="nav-link active" href="./help.html">Help</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./home-page.html" id="logout-btn">Logout</a>
+              <a class="nav-link" href="./home-page.html" id="logout-btn"
+                >Logout</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <div class="container">
+      <h2 class="text-center section-title mt-5">Need Help?</h2>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <form>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                placeholder="Enter subject"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subjectMatter" class="form-label"
+                >Subject Matter</label
+              >
+              <textarea
+                class="form-control"
+                id="subjectMatter"
+                rows="5"
+                placeholder="Enter subject matter"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-        <h2 class="text-center">Need Help?</h2>
-        <div class="row justify-content-center mt-5">
-          <div class="col-lg-8">
-            <form>
-              <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
-              </div>
-              <div class="mb-3">
-                <label for="subjectMatter" class="form-label">Subject Matter</label>
-                <textarea class="form-control" id="subjectMatter" rows="5" placeholder="Enter subject matter"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+      <h2 class="text-center mb-5 section-title mt-5">
+        Frequently Asked Questions
+      </h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              What are the deadlines? What are the requirements?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Please visit our Application Deadlines and Requirements section to
+              review the specific program you are interested in.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              What are the minimum requirements to apply? What should I do
+              before I consider applying?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Please visit our How to Apply guide for GPA requirements and
+              suggested actions may consider before you begin an application.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Will Mason accept my degree from an unaccredited United States
+              institution?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              No, we will only accept degrees and transfer credits accredited by
+              one of the organizations found here.
+            </div>
           </div>
         </div>
       </div>
-      
+    </div>
 
-
+    <footer class="bg-light mt-5">
       <div class="container">
-        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What are the deadlines? What are the requirements? 
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Please visit our Application Deadlines and Requirements section to review the specific program you are interested in.
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>
+              At Mason, we believe it will take all of us together to reimagine
+              a better tomorrow. We are unapologetically focused on action,
+              ready to take on the world's full, messy truths so that we may
+              learn and grow wiser from them
+            </p>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                What are the minimum requirements to apply? What should I do before I consider applying? 
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Please visit our How to Apply guide for GPA requirements and suggested actions may consider before you begin an application.
-              </div>
-            </div>
+          <div class="col-md-4" id="quick-links">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="./home-page.html">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="./Registration.html">Registration</a></li>
+              <li><a href="./help.html">Help</a></li>
+            </ul>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Will Mason accept my degree from an unaccredited United States institution?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                No, we will only accept degrees and transfer credits accredited by one of the organizations found here.
-              </div>
-            </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <address>
+              4400 University Dr, <br />
+              Fairfax, VA 22030<br />
+              <abbr title="Phone">P:</abbr> (703) 993-1000
+            </address>
           </div>
         </div>
       </div>
-      
-
-    <footer class="bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h5>About Us</h5>
-              <p>
-                  At Mason, we believe it will take all of us together to reimagine a better tomorrow. We are unapologetically focused on action, ready to take on the world's full, messy truths so that we may learn and grow wiser from them
-              </p>
-            </div>
-            <div class="col-md-4" id="quick-links">
-              <h5>Quick Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="./home-page.html">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="./Registration.html">Registration</a></li>
-                <li><a href="./help.html">Help</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h5>Contact Us</h5>
-              <address>
-                4400 University Dr, <br />
-                Fairfax, VA 22030<br />
-                <abbr title="Phone">P:</abbr> (703) 993-1000
-              </address>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
