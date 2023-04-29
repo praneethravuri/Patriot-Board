@@ -11,3 +11,7 @@
 #quick-links ul li a:hover{
     color: green;
 }
+
+footer{
+    border-top: 5px solid gold;
+}

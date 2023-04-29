@@ -76,5 +76,47 @@
         "location" : "Engineering Building | Room: 1020",
         "description" : "",
         "timings" : "Wednesday | 9:00am - 11:40am"
+    },
+    "MKTG 630": {
+        "instrName": "Jennifer Kim",
+        "location": "Exploratory Hall | Room: 2040",
+        "description": "This is a graduate course designed to provide students with an understanding of the principles of marketing, including market segmentation, consumer behavior, product development, pricing, promotion, and distribution. ",
+        "timings": "Thursday | 4:30pm - 7:10pm"
+    },
+    "FIN 620": {
+        "instrName": "David Lee",
+        "location": "Exploratory Hall | Room: 3010",
+        "description": "This course provides a comprehensive overview of the financial management principles and practices in corporations. Topics covered include capital budgeting, financial statement analysis, risk and return, cost of capital, capital structure, dividend policy, and working capital management. ",
+        "timings": "Monday | 4:30pm - 7:10pm"
+    },
+    "MATH 550": {
+        "instrName": "Michael Brown",
+        "location": "Art and Design Building | Room: 1040",
+        "description": "This course covers advanced topics in linear algebra and numerical methods, including matrix factorization, eigenvalue problems, singular value decomposition, iterative methods, and numerical optimization. Applications to data analysis, machine learning, and scientific computing will be emphasized.",
+        "timings": "Wednesday | 9:00am - 11:40am"
+    },
+    "PHYS 750": {
+        "instrName": "Karen Johnson",
+        "location": "Planetary Hall | Room: 3030",
+        "description": "This course covers advanced topics in quantum mechanics, including angular momentum, perturbation theory, scattering, and time-dependent phenomena. Applications to atomic physics, condensed matter physics, and quantum information will be discussed. ",
+        "timings": "Tuesday | 4:30pm - 7:10pm"
+    },
+    "CS 680": {
+        "instrName": "Amy Lee",
+        "location": "Innovation Hall | Room: 109",
+        "description": "This course covers the principles and practice of software engineering, including requirements analysis, design patterns, testing, debugging, and maintenance. Emphasis is placed on developing high-quality, reliable, and scalable software systems using modern software development tools and techniques. ",
+        "timings": "Thursday | 9:00am - 11:40am"
+    },
+    "SWE 690": {
+        "instrName": "Dimitri Kaznachey",
+        "location": "Engineering Building | Room: 3030",
+        "description": "This course covers advanced topics in software engineering, including software architecture, software metrics, software reuse, software evolution, and software project management. Emphasis is placed on developing practical skills for managing large-scale software projects and software development teams. ",
+        "timings": "Monday | 1:30pm - 4:10pm"
+    },
+    "STAT 610": {
+        "instrName": "Linda Smith",
+        "location": "Exploratory Hall | Room: 2040",
+        "description": "This course covers advanced topics in statistical inference, including estimation, hypothesis testing, confidence intervals, and Bayesian methods. Applications to experimental design, survey sampling, and data analysis will be emphasized. ",
+        "timings": "Tuesday | 9:00am - 11:40am"
     }
 }

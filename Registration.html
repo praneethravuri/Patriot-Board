@@ -13,9 +13,120 @@
     <link rel="stylesheet" href="./CSS/nav-bar.css">
     <link rel="stylesheet" href="./CSS/registration.css">
     <link rel="stylesheet" href="./CSS/template.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.png" />
 </head>
 <body>
+
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-green">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img src="./Images/logo-no-background.svg" alt=""
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./home-page.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./Registration.html">Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./help.html">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="logout-btn">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!--Course searching and selecting-->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 select-courses-table">
+                <div class="mb-3">
+                  <label for="courseSelect" class="form-label">Select a course:</label>
+                  <select class="form-select" id="courseSelect">
+                    <option value="none">-None-</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="courseInput" class="form-label">Enter course number:</label>
+                  <input type="text" class="form-control" id="courseNumberInput">
+                </div>
+                <table class="table" style="border: none;">
+                  <thead>
+                    <tr>
+                      <th style="border: none; display: none;" id="available-courses-title">Available Courses</th>
+                    </tr>
+                  </thead>
+                  <tbody id="searchResults">
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6" id="selected-courses-box">
+                <p>Your selected courses appear here</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+
+
+          <!--Footer-->
+          <footer class="bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5>About Us</h5>
+                  <p>
+                      At Mason, we believe it will take all of us together to reimagine a better tomorrow. We are unapologetically focused on action, ready to take on the world's full, messy truths so that we may learn and grow wiser from them
+                  </p>
+                </div>
+                <div class="col-md-4" id="quick-links">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="./home-page.html">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="./Registration.html">Registration</a></li>
+                    <li><a href="./help.html">Help</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contact Us</h5>
+                  <address>
+                    4400 University Dr, <br />
+                    Fairfax, VA 22030<br />
+                    <abbr title="Phone">P:</abbr> (703) 993-1000
+                  </address>
+                </div>
+              </div>
+            </div>
+          </footer>
+    <script type="module" src="./controller/registration.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </body>
 </html>
