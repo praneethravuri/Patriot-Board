@@ -1,0 +1,9 @@
+#submit-btn{
+    background-color: green;
+    transition: all 0.3s ease 0s;
+}
+
+#submit-btn:hover{
+    background-color: darkgreen;
+    color: gold;
+}
