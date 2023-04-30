@@ -24,6 +24,18 @@ td {
   text-align: center;
 }
 
+#courseCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 .view-btn {
   padding: 10px;
   border: 2px solid white;

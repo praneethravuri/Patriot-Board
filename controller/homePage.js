@@ -34,7 +34,7 @@ studentCourses.forEach((course) => {
     }
     const cardHtml = `
         <div class="col">
-            <div class="card mb-3">
+            <div class="card mb-3 mr-10">
                 <div class="card-body">
                     <h5 class="card-title">${course}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">${courseDetailsObj.instrName}</h6>
@@ -48,3 +48,16 @@ studentCourses.forEach((course) => {
     `;
     courseCardsContainer.innerHTML += cardHtml;
 });
+
+// Get the reference to the grades-list div
+const gradesList = document.getElementById("grades-list");
+
+// Loop through the courses in studentCourses object and create a list of courses
+for (const course in studentCourses) {
+  // Create a new <li> tag
+  const li = document.createElement("li");
+  // Set the text content of the <li> tag to the course name
+  li.textContent = studentCourses[course].name;
+  // Append the <li> tag to the grades-list div
+  gradesList.appendChild(li);
+}
