@@ -14,7 +14,6 @@ studentDetails = studentDetails[studentEmail];
 let studentCourses = studentData[studentEmail];
 let courseDetails = courseList;
 
-
 $(document).ready(function(){
     let row = "<tr>"
     row += "<td class='text-nowrap'>" + studentDetails["name"] + "</td>"
@@ -49,15 +48,34 @@ studentCourses.forEach((course) => {
     courseCardsContainer.innerHTML += cardHtml;
 });
 
-// Get the reference to the grades-list div
-const gradesList = document.getElementById("grades-list");
 
-// Loop through the courses in studentCourses object and create a list of courses
-for (const course in studentCourses) {
-  // Create a new <li> tag
-  const li = document.createElement("li");
-  // Set the text content of the <li> tag to the course name
-  li.textContent = studentCourses[course].name;
-  // Append the <li> tag to the grades-list div
-  gradesList.appendChild(li);
+// Grades Display Bar
+// Get the div element with the id "grades-display"
+const gradesDisplay = document.getElementById("grades-display");
+
+// Create a loop to add the code 3 times
+for (let i = 0; i < 3; i++) {
+  // Create a new div element
+  const progressTrackerDiv = document.createElement("div");
+  progressTrackerDiv.classList.add("progress-tracker");
+
+  const randomNumber = Math.random()* 99 + 1;
+  const randomGrade = Math.round(randomNumber * 100) / 100;
+  let currentCourse = studentCourses[i]
+
+  // Set the innerHTML of the div element to the progress tracker code
+  progressTrackerDiv.innerHTML = `
+  <div class="progress-tracker">
+  <div class="progress-label">${currentCourse}</div>
+  <div class="progress-bar">
+      <div class="progress"></div>
+  </div>
+  <div class="progress-label"><span class="progress-value">0%</span></div>
+</div>
+
+
+  `;
+
+  // Append the new div element to the gradesDisplay div
+  gradesDisplay.appendChild(progressTrackerDiv);
 }

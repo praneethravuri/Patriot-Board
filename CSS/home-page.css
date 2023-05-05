@@ -99,3 +99,36 @@ td {
   color: gold;
   padding: 10px;
 }
+
+
+.progress-tracker {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #0077c0;
+  border-radius: 5px;
+}
+
+.progress-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.progress-value {
+  font-weight: bold;
+  color: #0077c0;
+}
