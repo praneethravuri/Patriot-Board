@@ -37,7 +37,7 @@
     },
     "CS 583" : {
         "instrName" : "Michael Brown",
-        "location" : "Art and Design Building | Room: 1040",
+        "location" : "Arts Building | Room: 1040",
         "description" : "This course covers algorithmic strategies like greedy, divide and conquer, dynamic programming, search and traversal, and approximation, and analyzes algorithms in these categories, including NP-Hard and NP-Complete problems.",
         "timings" : "Tuesday | 9:00am - 11:40am"
     },
@@ -49,7 +49,7 @@
     },
     "MATH 650" : {
         "instrName" : "David Lee",
-        "location" : "Art and Design Building | Room: 3080",
+        "location" : "Arts Building | Room: 3080",
         "description" : "",
         "timings" : "Wednesday | 1:30pm - 4:10pm"
     },
@@ -67,7 +67,7 @@
     },
     "PHYS 650" : {
         "instrName" : "Karen Johnson",
-        "location" : "Art and Design Building | Room: 1080",
+        "location" : "Arts Building | Room: 1080",
         "description" : "",
         "timings" : "Tuesday | 1:30pm - 4:10pm"
     },
@@ -91,7 +91,7 @@
     },
     "MATH 550": {
         "instrName": "Michael Brown",
-        "location": "Art and Design Building | Room: 1040",
+        "location": "Arts Building | Room: 1040",
         "description": "This course covers advanced topics in linear algebra and numerical methods, including matrix factorization, eigenvalue problems, singular value decomposition, iterative methods, and numerical optimization. Applications to data analysis, machine learning, and scientific computing will be emphasized.",
         "timings": "Wednesday | 9:00am - 11:40am"
     },

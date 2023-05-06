@@ -49,33 +49,36 @@ studentCourses.forEach((course) => {
 });
 
 
-// Grades Display Bar
-// Get the div element with the id "grades-display"
-const gradesDisplay = document.getElementById("grades-display");
 
-// Create a loop to add the code 3 times
-for (let i = 0; i < 3; i++) {
-  // Create a new div element
-  const progressTrackerDiv = document.createElement("div");
-  progressTrackerDiv.classList.add("progress-tracker");
+studentCourses.forEach(course => {
 
-  const randomNumber = Math.random()* 99 + 1;
-  const randomGrade = Math.round(randomNumber * 100) / 100;
-  let currentCourse = studentCourses[i]
+    const progressBar = $("<div></div>").addClass("progress");
+    const randomFloat = Math.random() * 50 + 50;
+    const randomGrade = Math.round(randomFloat * 100) / 100;
+    console.log(randomGrade);
+    let progressBarColor = ""
+    if(randomGrade >= 50 && randomGrade <= 60){
+        progressBarColor = "red-bar";
+    }
+    else if(randomGrade > 60 && randomGrade <= 80){
+        progressBarColor = "yellow-bar"
+    }
+    else{
+        progressBarColor = "green-bar"
+    }
 
-  // Set the innerHTML of the div element to the progress tracker code
-  progressTrackerDiv.innerHTML = `
-  <div class="progress-tracker">
-  <div class="progress-label">${currentCourse}</div>
-  <div class="progress-bar">
-      <div class="progress"></div>
-  </div>
-  <div class="progress-label"><span class="progress-value">0%</span></div>
-</div>
+    const progressBarFill = $("<div></div>")
+        .addClass("progress-bar")
+        .css("width", `${randomGrade}%`)
+        .text(`${randomGrade}%`)
+        .attr("id", `${progressBarColor}`);
 
+    progressBar.append(progressBarFill);
 
-  `;
+    const courseContainer = $("<div></div>")
+    .addClass("course-container mt-4")
+    .append(`<h6>${course}</h6>`)
+    .append(progressBar);
+    $("#grades-display").append(courseContainer);
+  });
 
-  // Append the new div element to the gradesDisplay div
-  gradesDisplay.appendChild(progressTrackerDiv);
-}
